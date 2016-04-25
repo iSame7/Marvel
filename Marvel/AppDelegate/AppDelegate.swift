@@ -13,13 +13,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     var window: UIWindow?
 
+    let appDependencies = AppDependencies()
+
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let splitViewController = self.window!.rootViewController as! UISplitViewController
-        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
-        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
-        splitViewController.delegate = self
+        UISearchBar.appearance().barTintColor = UIColor.colorFromRGB(0, g: 0, b: 0)
+        UISearchBar.appearance().tintColor = UIColor.redColor()
+        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).tintColor = UIColor.colorFromRGB(0, g: 0, b: 0)
+        
+        appDependencies.installRootViewControllerIntoWindow(window!)
+
         return true
     }
 

@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (3.3.1)
+  - AlamofireImage (2.4.0):
+    - Alamofire (~> 3.3)
+  - CryptoSwift (0.2.1)
+  - HanekeSwift (0.10.1)
+  - ImageViewer (2.0)
+
+DEPENDENCIES:
+  - AlamofireImage (~> 2.0)
+  - CryptoSwift (= 0.2.1)
+  - HanekeSwift
+  - ImageViewer
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  AlamofireImage: 87408b652e0f5ae5fe364035f15aea8b9b24c77e
+  CryptoSwift: f137af19c369362debf82957d0366c8d79329341
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  ImageViewer: 00eae024d0cb2eebb4b228f4669b6c4872afadb9
+
+COCOAPODS: 0.39.0
