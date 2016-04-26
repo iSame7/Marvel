@@ -33,8 +33,4 @@ class FilterPresenter: NSObject, ListInteractorOutput, FilterModuleInterface, UI
         
 
     }
-
-    func didDismissSearchController(searchController: UISearchController) {
-        
-    }
 }

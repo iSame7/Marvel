@@ -45,7 +45,7 @@ class FilterWireframe: NSObject {
         // To ensure search results controller is presented in the current view controller
         //        searchController.definesPresentationContext = true
 
-        searchController.delegate = filterPresenter
+        searchController.delegate = listViewController
         searchController.dimsBackgroundDuringPresentation = true
 
         // This line do the trick of diplaying UISearchController using a button action and wothout SearchBar.

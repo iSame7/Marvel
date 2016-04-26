@@ -54,7 +54,7 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
         super.viewDidAppear(animated)
 
         // Hide navigation bar while swip up, or show navigation bar while swip down.
-        navigationController?.hidesBarsOnSwipe = true
+        navigationController?.hidesBarsOnSwipe = false
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -307,6 +307,31 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
             self.eventHandler?.openImageViewer(galleryViewController)
         }
 
+    }
+
+    override func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        if velocity.y > 0 {
+
+            // Dragging up
+            // Remove navigation bar.
+            self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: UIBarMetrics.Default)
+            self.navigationController?.navigationBar.shadowImage = nil
+            self.navigationController?.navigationBar.tintColor = nil
+            self.navigationController?.navigationBar.translucent = true
+
+            // show title
+            self.title = selectedCharacterObj?.name
+
+        }
+        else {
+            // Dragging down
+            // Show Transparent navigation bar.
+            self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+            self.navigationController?.navigationBar.shadowImage = UIImage()
+            self.navigationController?.navigationBar.translucent = true
+
+            self.title = ""
+        }
     }
 
 }

@@ -44,7 +44,6 @@ class FilterCharactersTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("numberOfRowsInSection")
         return self.characters.count
     }
 

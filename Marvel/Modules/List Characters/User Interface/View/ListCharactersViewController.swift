@@ -42,13 +42,14 @@ class ListCharactersViewController: UICollectionViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
-        // Hide navigation bar while swip up, or show navigation bar while swip down.
-        //        navigationController?.hidesBarsOnSwipe = true
+        self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.shadowImage = nil
+        self.navigationController?.navigationBar.tintColor = nil
+        self.navigationController?.navigationBar.translucent = true
 
-        /*  Navigation Bar setup */
-        //        self.navigationController?.navigationBar.translucent = false
-        // Change the navigation bar background color according to mockup.
-        self.navigationController!.navigationBar.barTintColor = UIColor.colorFromRGB(0, g: 0, b: 0)
+        // Hide navigation bar while swip up, or show navigation bar while swip down.
+        navigationController?.hidesBarsOnSwipe = true
+
     }
 
     func configureView() {
@@ -76,53 +77,7 @@ class ListCharactersViewController: UICollectionViewController {
 
     // MARK: - Actions
     func searchPressed() {
-        /*
-         // show filter view controller.
-         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-         let viewController = storyboard.instantiateViewControllerWithIdentifier("MasterVC") as! FilterCharactersTableViewController
-         //        self.navigationController?.pushViewController(viewController, animated: true)
-         let navController = UINavigationController(rootViewController: viewController) // Creating a navigation controller with VC1 at the root of the navigation stack.
-         navController.navigationBar.barTintColor = UIColor.colorFromRGB(0, g: 0, b: 0)
 
-
-         self.presentViewController(navController, animated: true, completion: nil)
-         */
-
-
-        /*
-         We want to display searchResultsController over current navigationItem.
-         */
-/*
-        // Create a UITableViewController to present search results since the actual view controller is not a subclass of UITableViewController in this case
-        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let searchResultsController = storyboard.instantiateViewControllerWithIdentifier("FilterCharacters") as! FilterCharactersTableViewController
-        searchResultsController.delegate = self
-
-        //let navController = UINavigationController(rootViewController: searchResultsController) // Creating a navigation controller with VC1 at the root of the navigation stack.
-
-        // Init UISearchController with the search results controller
-        let searchController = UISearchController(searchResultsController: searchResultsController)
-        // Link the search controller
-        searchController.searchResultsUpdater = searchResultsController
-        // This is obviously needed because the search bar will be contained in the navigation bar
-        searchController.hidesNavigationBarDuringPresentation = true
-        // Required (?) to set place a search bar in a navigation bar
-        searchController.searchBar.searchBarStyle = UISearchBarStyle.Prominent
-        // This is where you set the search bar in the navigation bar, instead of using table view's header ...
-//        self.navigationItem.titleView = searchController.searchBar
-        // To ensure search results controller is presented in the current view controller
-//        searchController.definesPresentationContext = true
-
-        // Setting delegates and other stuff
-//        searchResultsController.tableView.dataSource = self
-//        searchResultsController.tableView.delegate = self
-
-        searchController.delegate = self
-        searchController.dimsBackgroundDuringPresentation = true
-
-        // This line do the trick of diplaying UISearchController using a button action and wothout SearchBar.
-        presentViewController(searchController, animated: true, completion: nil)
-*/
         eventHandler?.searchCharacters()
         
         self.navigationItem.titleView?.hidden = true
