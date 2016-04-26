@@ -92,7 +92,7 @@ class ListCharactersViewController: UICollectionViewController {
         /*
          We want to display searchResultsController over current navigationItem.
          */
-
+/*
         // Create a UITableViewController to present search results since the actual view controller is not a subclass of UITableViewController in this case
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         let searchResultsController = storyboard.instantiateViewControllerWithIdentifier("FilterCharacters") as! FilterCharactersTableViewController
@@ -122,6 +122,9 @@ class ListCharactersViewController: UICollectionViewController {
 
         // This line do the trick of diplaying UISearchController using a button action and wothout SearchBar.
         presentViewController(searchController, animated: true, completion: nil)
+*/
+        eventHandler?.searchCharacters()
+        
         self.navigationItem.titleView?.hidden = true
         self.navigationItem.rightBarButtonItem = nil
     }
@@ -180,26 +183,11 @@ extension ListCharactersViewController {
     }
 }
 
-extension ListCharactersViewController: UISearchControllerDelegate, FilterTableViewDelegate {
+extension ListCharactersViewController: UISearchControllerDelegate {
 
     func didDismissSearchController(searchController: UISearchController) {
         self.navigationItem.titleView?.hidden = false
         self.navigationItem.rightBarButtonItem = rightBarButton
     }
-
-    func delegateForCell(selectedItemIndex: Int) {
-
-        // show details view controller.
-        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let viewController = storyboard.instantiateViewControllerWithIdentifier("MarvelHeroesDetails") as! MarvelHeroesDetailsTableViewController
-        print("charachterId... \(self.characters[selectedItemIndex].id)")
-        viewController.charachterId = String(self.characters[selectedItemIndex].id)
-        viewController.selectedCharacterImagePath = self.characters[selectedItemIndex].thumbnail.path! + "." + self.characters[selectedItemIndex].thumbnail.thumbExtension!
-        viewController.selectedCharacterUrls = self.characters[selectedItemIndex].urls
-        viewController.selectedCharacterObj = self.characters[selectedItemIndex]
-
-        self.navigationController?.pushViewController(viewController, animated: true)
-    }
-
 }
 

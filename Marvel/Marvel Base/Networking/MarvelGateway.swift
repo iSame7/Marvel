@@ -26,5 +26,7 @@ protocol MarvelGateway {
     func charactersStories(limitMarvelNumberOfResources: Int, charachterId: String, completionHandler: (stories: [Stories]) -> Void, failure: (error: ErrorType?) -> Void)
     // get characters events
     func charactersEvents(limitMarvelNumberOfResources: Int, charachterId: String, completionHandler: (events: [Events]) -> Void, failure: (error: ErrorType?) -> Void)
+    // filter characters by name
+    func filterCharacters(limitMarvelNumberOfResources: Int, name: String, completionHandler: (characters: [Character]) -> Void, failure: (error: ErrorType?) -> Void)
 
 }

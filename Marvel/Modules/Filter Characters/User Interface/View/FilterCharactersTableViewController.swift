@@ -8,13 +8,10 @@
 
 import UIKit
 
-protocol FilterTableViewDelegate {
-    func delegateForCell(selectedItemIndex: Int)
-}
-
 class FilterCharactersTableViewController: UITableViewController {
 
-    var delegate:FilterTableViewDelegate?
+    var eventHandler : FilterModuleInterface?
+
 
     // limit that manges marvel number of resources loaded per request.
     var limit = KMarvelResourcesLimit
@@ -59,7 +56,7 @@ class FilterCharactersTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.delegate?.delegateForCell(indexPath.row)
+        self.eventHandler?.tableViewCellSelected(indexPath.row, characters: self.characters)
     }
 
 }
@@ -69,20 +66,7 @@ extension FilterCharactersTableViewController: UISearchResultsUpdating {
 
         if let searchText = searchController.searchBar.text {
             if searchText != "" {
-                MarvelFactory().filterCharacters(limit, name: searchText, completionHandler: { (characters) in
-                    
-                    self.characters = characters
-                    self.tableView.reloadData()
-
-                }) { (error) -> Void in
-
-                    let nsError = error as! NSError
-
-                    let alert = UIAlertController(title: "Error", message: nsError.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
-                    let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
-                    alert.addAction(defaultAction)
-                    self.presentViewController(alert, animated: true, completion: nil)
-                }
+                self.eventHandler?.updateView(limit: limit, name: searchText)
             }
 
         }
@@ -93,5 +77,13 @@ extension FilterCharactersTableViewController: UISearchResultsUpdating {
 // MARK: - UISearchBarDelegate
 extension FilterCharactersTableViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+    }
+}
+
+extension FilterCharactersTableViewController: ListViewInterface {
+
+    func showCharacters(characters: [Character]) {
+        self.characters = characters
+        self.tableView?.reloadData()
     }
 }

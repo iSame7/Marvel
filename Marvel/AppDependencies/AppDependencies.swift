@@ -26,13 +26,31 @@ class AppDependencies {
         let listPresenter = ListPresenter()
         let listInteractor = ListInteractor(marvelgateway: MarvelFactory())
 
+        let filterWireframe = FilterWireframe()
+        let filterInteractor = FilterInteractor(marvelgateway: MarvelFactory())
+        let filterPresenter = FilterPresenter()
+
+        let detailsWireframe = DetailsWireframe()
+
         listInteractor.output = listPresenter
 
         listPresenter.listInteractor = listInteractor
         listPresenter.listWireframe = listWireframe
 
+        listWireframe.filterWireframe = filterWireframe
         listWireframe.listPresenter = listPresenter
         listWireframe.rootWireframe = rootWireframe
+
+        filterInteractor.output = filterPresenter
+        
+        filterWireframe.filterPresenter = filterPresenter
+        filterWireframe.detailsWireframe = detailsWireframe
+
+        filterPresenter.filterWireframe = filterWireframe
+        filterPresenter.filterInteractor = filterInteractor
+//        filterPresenter.filterModuleDelegate = listPresenter
+
+
     }
 
 

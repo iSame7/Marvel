@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		294CA3681CCDAEA100518FEB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3671CCDAEA100518FEB /* TableViewController.swift */; };
-		294CA36A1CCDBA6A00518FEB /* FilterCharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3691CCDBA6A00518FEB /* FilterCharactersTableViewController.swift */; };
-		294CA36C1CCDD09000518FEB /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA36B1CCDD09000518FEB /* FilterTableViewCell.swift */; };
 		294CA36E1CCE3AB200518FEB /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA36D1CCE3AB200518FEB /* ListViewInterface.swift */; };
 		294CA3711CCE3C8800518FEB /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3701CCE3C8800518FEB /* ListWireframe.swift */; };
 		294CA3761CCE3FC000518FEB /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3751CCE3FC000518FEB /* RootWireframe.swift */; };
 		294CA3791CCE624D00518FEB /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3781CCE624D00518FEB /* AppDependencies.swift */; };
+		294CA37D1CCE863100518FEB /* FilterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA37C1CCE863100518FEB /* FilterPresenter.swift */; };
+		294CA3801CCE86B000518FEB /* FilterModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA37F1CCE86B000518FEB /* FilterModuleInterface.swift */; };
+		294CA3871CCE895900518FEB /* FilterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3861CCE895900518FEB /* FilterInteractor.swift */; };
+		294CA38A1CCE8AB300518FEB /* FilterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3891CCE8AB300518FEB /* FilterWireframe.swift */; };
+		294CA3921CCE935B00518FEB /* FilterCharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA38D1CCE935B00518FEB /* FilterCharactersTableViewController.swift */; };
+		294CA3931CCE935B00518FEB /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA38E1CCE935B00518FEB /* FilterTableViewCell.swift */; };
+		294CA3971CCE98A400518FEB /* FilterModuleDelegateInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3961CCE98A400518FEB /* FilterModuleDelegateInterface.swift */; };
+		294CA39A1CCE9E6D00518FEB /* DetailsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3991CCE9E6D00518FEB /* DetailsWireframe.swift */; };
+		294CA39C1CCED22600518FEB /* FilterInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA39B1CCED22600518FEB /* FilterInteractorIO.swift */; };
+		294CA39E1CCED42500518FEB /* FilterViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA39D1CCED42500518FEB /* FilterViewInterface.swift */; };
 		296F5AC41CC6FF42000BA496 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296F5AC31CC6FF42000BA496 /* ListInteractor.swift */; };
 		296F5AC61CC6FF55000BA496 /* ListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296F5AC51CC6FF55000BA496 /* ListInteractorIO.swift */; };
 		296F5AC91CC7058B000BA496 /* ListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296F5AC81CC7058B000BA496 /* ListModuleInterface.swift */; };
@@ -21,8 +28,6 @@
 		298923231CC4F6B000BCB5EE /* MarvelGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298923221CC4F6B000BCB5EE /* MarvelGateway.swift */; };
 		298923291CC50F4D00BCB5EE /* MarvelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298923281CC50F4D00BCB5EE /* MarvelFactory.swift */; };
 		2989232B1CC510D100BCB5EE /* MarvelFactory+Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989232A1CC510D100BCB5EE /* MarvelFactory+Characters.swift */; };
-		2989232F1CC5133A00BCB5EE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989232C1CC5133A00BCB5EE /* APIManager.swift */; };
-		298923301CC5133A00BCB5EE /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989232D1CC5133A00BCB5EE /* MarvelAPI.swift */; };
 		298923311CC5133A00BCB5EE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989232E1CC5133A00BCB5EE /* Networking.swift */; };
 		298923501CC5177400BCB5EE /* ComicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298923461CC5177400BCB5EE /* ComicList.swift */; };
 		298923511CC5177400BCB5EE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298923471CC5177400BCB5EE /* Data.swift */; };
@@ -74,8 +79,6 @@
 		29BF4F7D1CCAD85400C0194F /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F701CCAD85400C0194F /* Events.swift */; };
 		29BF4F7E1CCAD85400C0194F /* EventsRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F711CCAD85400C0194F /* EventsRootClass.swift */; };
 		29BF4F841CCADBCD00C0194F /* MarvelFactory+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F831CCADBCD00C0194F /* MarvelFactory+Events.swift */; };
-		29C161401CCC703D00C595B1 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C1613F1CCC703D00C595B1 /* SearchTableViewController.swift */; };
-		29C161421CCCF9CB00C595B1 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C161411CCCF9CA00C595B1 /* Candy.swift */; };
 		29E689F41CC433E6007211D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E689F31CC433E6007211D8 /* AppDelegate.swift */; };
 		29E689F91CC43413007211D8 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E689F71CC43413007211D8 /* UIColor+Palette.swift */; };
 		29E689FA1CC43413007211D8 /* UIImage+Decompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E689F81CC43413007211D8 /* UIImage+Decompression.swift */; };
@@ -115,13 +118,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		294CA3671CCDAEA100518FEB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		294CA3691CCDBA6A00518FEB /* FilterCharactersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCharactersTableViewController.swift; sourceTree = "<group>"; };
-		294CA36B1CCDD09000518FEB /* FilterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		294CA36D1CCE3AB200518FEB /* ListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewInterface.swift; sourceTree = "<group>"; };
 		294CA3701CCE3C8800518FEB /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
 		294CA3751CCE3FC000518FEB /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		294CA3781CCE624D00518FEB /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		294CA37C1CCE863100518FEB /* FilterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterPresenter.swift; sourceTree = "<group>"; };
+		294CA37F1CCE86B000518FEB /* FilterModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModuleInterface.swift; sourceTree = "<group>"; };
+		294CA3861CCE895900518FEB /* FilterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterInteractor.swift; sourceTree = "<group>"; };
+		294CA3891CCE8AB300518FEB /* FilterWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterWireframe.swift; sourceTree = "<group>"; };
+		294CA38D1CCE935B00518FEB /* FilterCharactersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCharactersTableViewController.swift; sourceTree = "<group>"; };
+		294CA38E1CCE935B00518FEB /* FilterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		294CA3961CCE98A400518FEB /* FilterModuleDelegateInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModuleDelegateInterface.swift; sourceTree = "<group>"; };
+		294CA3991CCE9E6D00518FEB /* DetailsWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsWireframe.swift; sourceTree = "<group>"; };
+		294CA39B1CCED22600518FEB /* FilterInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterInteractorIO.swift; sourceTree = "<group>"; };
+		294CA39D1CCED42500518FEB /* FilterViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewInterface.swift; sourceTree = "<group>"; };
 		296F5AC31CC6FF42000BA496 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		296F5AC51CC6FF55000BA496 /* ListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorIO.swift; sourceTree = "<group>"; };
 		296F5AC81CC7058B000BA496 /* ListModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModuleInterface.swift; sourceTree = "<group>"; };
@@ -129,8 +139,6 @@
 		298923221CC4F6B000BCB5EE /* MarvelGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelGateway.swift; sourceTree = "<group>"; };
 		298923281CC50F4D00BCB5EE /* MarvelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelFactory.swift; sourceTree = "<group>"; };
 		2989232A1CC510D100BCB5EE /* MarvelFactory+Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MarvelFactory+Characters.swift"; sourceTree = "<group>"; };
-		2989232C1CC5133A00BCB5EE /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		2989232D1CC5133A00BCB5EE /* MarvelAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
 		2989232E1CC5133A00BCB5EE /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		298923461CC5177400BCB5EE /* ComicList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicList.swift; sourceTree = "<group>"; };
 		298923471CC5177400BCB5EE /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -183,8 +191,6 @@
 		29BF4F701CCAD85400C0194F /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		29BF4F711CCAD85400C0194F /* EventsRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsRootClass.swift; sourceTree = "<group>"; };
 		29BF4F831CCADBCD00C0194F /* MarvelFactory+Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MarvelFactory+Events.swift"; sourceTree = "<group>"; };
-		29C1613F1CCC703D00C595B1 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
-		29C161411CCCF9CA00C595B1 /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
 		29E689F31CC433E6007211D8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29E689F71CC43413007211D8 /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
 		29E689F81CC43413007211D8 /* UIImage+Decompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Decompression.swift"; sourceTree = "<group>"; };
@@ -272,6 +278,76 @@
 			path = AppDependencies;
 			sourceTree = "<group>";
 		};
+		294CA37A1CCE85F100518FEB /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				294CA37B1CCE860B00518FEB /* Presenter */,
+				294CA38B1CCE92F000518FEB /* View */,
+				294CA3881CCE8A7200518FEB /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		294CA37B1CCE860B00518FEB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				294CA37C1CCE863100518FEB /* FilterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		294CA37E1CCE868700518FEB /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				294CA37F1CCE86B000518FEB /* FilterModuleInterface.swift */,
+				294CA3961CCE98A400518FEB /* FilterModuleDelegateInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		294CA3811CCE888600518FEB /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				294CA3851CCE894400518FEB /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		294CA3851CCE894400518FEB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				294CA3861CCE895900518FEB /* FilterInteractor.swift */,
+				294CA39B1CCED22600518FEB /* FilterInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		294CA3881CCE8A7200518FEB /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				294CA3891CCE8AB300518FEB /* FilterWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		294CA38B1CCE92F000518FEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				294CA38D1CCE935B00518FEB /* FilterCharactersTableViewController.swift */,
+				294CA38E1CCE935B00518FEB /* FilterTableViewCell.swift */,
+				294CA39D1CCED42500518FEB /* FilterViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		294CA3981CCE9E1500518FEB /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				294CA3991CCE9E6D00518FEB /* DetailsWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
 		296F5AC01CC6FCE5000BA496 /* Application Logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +384,7 @@
 		296F5ACD1CC7CCCD000BA496 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				294CA3981CCE9E1500518FEB /* Wireframe */,
 				296F5ACE1CC7CCDA000BA496 /* View */,
 			);
 			path = "User Interface";
@@ -331,8 +408,6 @@
 		298923261CC50A5F00BCB5EE /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				2989232C1CC5133A00BCB5EE /* APIManager.swift */,
-				2989232D1CC5133A00BCB5EE /* MarvelAPI.swift */,
 				2989232E1CC5133A00BCB5EE /* Networking.swift */,
 			);
 			path = Client;
@@ -413,11 +488,9 @@
 		29C1613E1CCC700000C595B1 /* Filter Characters */ = {
 			isa = PBXGroup;
 			children = (
-				294CA3691CCDBA6A00518FEB /* FilterCharactersTableViewController.swift */,
-				29C1613F1CCC703D00C595B1 /* SearchTableViewController.swift */,
-				29C161411CCCF9CA00C595B1 /* Candy.swift */,
-				294CA3671CCDAEA100518FEB /* TableViewController.swift */,
-				294CA36B1CCDD09000518FEB /* FilterTableViewCell.swift */,
+				294CA3811CCE888600518FEB /* Application Logic */,
+				294CA37E1CCE868700518FEB /* Module Interface */,
+				294CA37A1CCE85F100518FEB /* User Interface */,
 			);
 			path = "Filter Characters";
 			sourceTree = "<group>";
@@ -498,9 +571,9 @@
 		29E68A021CC43429007211D8 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				294CA36F1CCE3C5B00518FEB /* Wireframe */,
 				296F5ACA1CC7067D000BA496 /* Presenter */,
 				29E68A031CC43429007211D8 /* View */,
+				294CA36F1CCE3C5B00518FEB /* Wireframe */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -833,22 +906,24 @@
 			files = (
 				29E68A081CC43429007211D8 /* SlidingMenuCell.swift in Sources */,
 				29BF4EF31CC80A3B00C0194F /* MarvelHeroesDetailsTableViewController.swift in Sources */,
+				294CA39A1CCE9E6D00518FEB /* DetailsWireframe.swift in Sources */,
 				29BF4F621CCAC97E00C0194F /* OriginalIssue.swift in Sources */,
 				29BF4F1D1CC8D6DE00C0194F /* Price.swift in Sources */,
 				29BF4F7E1CCAD85400C0194F /* EventsRootClass.swift in Sources */,
 				29E68A0D1CC43434007211D8 /* AppConstants.swift in Sources */,
 				298923311CC5133A00BCB5EE /* Networking.swift in Sources */,
+				294CA38A1CCE8AB300518FEB /* FilterWireframe.swift in Sources */,
 				296F5ACC1CC70699000BA496 /* ListPresenter.swift in Sources */,
 				29BF4F401CC9C34200C0194F /* SeriesRootClass.swift in Sources */,
 				296F5AC91CC7058B000BA496 /* ListModuleInterface.swift in Sources */,
 				29BF4F4C1CCA412A00C0194F /* ParallaxTableViewController.swift in Sources */,
 				29BF4F791CCAD85400C0194F /* EventsData.swift in Sources */,
 				298923551CC5177400BCB5EE /* RootClass.swift in Sources */,
-				29C161421CCCF9CB00C595B1 /* Candy.swift in Sources */,
 				29E68A071CC43429007211D8 /* ListCharactersViewController.swift in Sources */,
 				29BF4F1E1CC8D6DE00C0194F /* Comic.swift in Sources */,
 				29BF4F031CC8591800C0194F /* CategoryRow.swift in Sources */,
 				29BF4F5F1CCAC97E00C0194F /* StoriesData.swift in Sources */,
+				294CA3931CCE935B00518FEB /* FilterTableViewCell.swift in Sources */,
 				29E689FA1CC43413007211D8 /* UIImage+Decompression.swift in Sources */,
 				29BF4F2A1CC9AB0600C0194F /* CharacterSectionCollectionViewCell.swift in Sources */,
 				29BF4F051CC8CFF500C0194F /* MarvelFactory+Comics.swift in Sources */,
@@ -859,36 +934,35 @@
 				29E68A091CC43429007211D8 /* SlidingMenuLayout.swift in Sources */,
 				298923561CC5177400BCB5EE /* Serie.swift in Sources */,
 				29BF4F171CC8D6DE00C0194F /* Creator.swift in Sources */,
+				294CA39E1CCED42500518FEB /* FilterViewInterface.swift in Sources */,
 				29BF4F471CC9D0BF00C0194F /* UIImageEffects.swift in Sources */,
 				29E689F41CC433E6007211D8 /* AppDelegate.swift in Sources */,
 				296F5AC41CC6FF42000BA496 /* ListInteractor.swift in Sources */,
 				29E689FE1CC4341D007211D8 /* Inspiration.swift in Sources */,
+				294CA3921CCE935B00518FEB /* FilterCharactersTableViewController.swift in Sources */,
 				29BF4F221CC8D6DE00C0194F /* TextObject.swift in Sources */,
 				29BF4F7C1CCAD85400C0194F /* Previou.swift in Sources */,
 				29E689FF1CC4341D007211D8 /* Session.swift in Sources */,
 				29F04D5B1CC18C300082AB14 /* DetailViewController.swift in Sources */,
-				29C161401CCC703D00C595B1 /* SearchTableViewController.swift in Sources */,
 				298923511CC5177400BCB5EE /* Data.swift in Sources */,
 				29BF4F281CC9463D00C0194F /* Catalog.swift in Sources */,
 				298923541CC5177400BCB5EE /* Character.swift in Sources */,
+				294CA3871CCE895900518FEB /* FilterInteractor.swift in Sources */,
 				29BF4F201CC8D6DE00C0194F /* SeriesSummary.swift in Sources */,
-				294CA3681CCDAEA100518FEB /* TableViewController.swift in Sources */,
 				294CA36E1CCE3AB200518FEB /* ListViewInterface.swift in Sources */,
 				2989232B1CC510D100BCB5EE /* MarvelFactory+Characters.swift in Sources */,
 				29F04D591CC18C300082AB14 /* MasterViewController.swift in Sources */,
-				298923301CC5133A00BCB5EE /* MarvelAPI.swift in Sources */,
 				296F5AC61CC6FF55000BA496 /* ListInteractorIO.swift in Sources */,
 				298923291CC50F4D00BCB5EE /* MarvelFactory.swift in Sources */,
-				2989232F1CC5133A00BCB5EE /* APIManager.swift in Sources */,
 				29BF4F161CC8D6DE00C0194F /* CharacterList.swift in Sources */,
 				294CA3761CCE3FC000518FEB /* RootWireframe.swift in Sources */,
 				29BF4F7D1CCAD85400C0194F /* Events.swift in Sources */,
 				29BF4F451CC9C78300C0194F /* MarvelFactory+Series.swift in Sources */,
 				294CA3711CCE3C8800518FEB /* ListWireframe.swift in Sources */,
-				294CA36A1CCDBA6A00518FEB /* FilterCharactersTableViewController.swift in Sources */,
 				29BF4F7B1CCAD85400C0194F /* Next.swift in Sources */,
 				29E689F91CC43413007211D8 /* UIColor+Palette.swift in Sources */,
 				298923501CC5177400BCB5EE /* ComicList.swift in Sources */,
+				294CA3801CCE86B000518FEB /* FilterModuleInterface.swift in Sources */,
 				298923591CC5177400BCB5EE /* Url.swift in Sources */,
 				29BF4F491CCA2E0B00C0194F /* CharacterDetailsTopCellTableViewCell.swift in Sources */,
 				298923581CC5177400BCB5EE /* Thumbnail.swift in Sources */,
@@ -901,14 +975,16 @@
 				29BF4F011CC8297400C0194F /* FooterReusableView.swift in Sources */,
 				29BF4F3F1CC9C34200C0194F /* Series.swift in Sources */,
 				29BF4F3C1CC9C34200C0194F /* SeriesData.swift in Sources */,
+				294CA3971CCE98A400518FEB /* FilterModuleDelegateInterface.swift in Sources */,
 				298923521CC5177400BCB5EE /* Event.swift in Sources */,
 				29BF4F1F1CC8D6DE00C0194F /* ComicRootClass.swift in Sources */,
-				294CA36C1CCDD09000518FEB /* FilterTableViewCell.swift in Sources */,
 				29BF4F181CC8D6DE00C0194F /* ComicData.swift in Sources */,
+				294CA39C1CCED22600518FEB /* FilterInteractorIO.swift in Sources */,
 				298923231CC4F6B000BCB5EE /* MarvelGateway.swift in Sources */,
 				29BF4F501CCA86F400C0194F /* String+ UppercaseFirst.swift in Sources */,
 				294CA3791CCE624D00518FEB /* AppDependencies.swift in Sources */,
 				29BF4F191CC8D6DE00C0194F /* Date.swift in Sources */,
+				294CA37D1CCE863100518FEB /* FilterPresenter.swift in Sources */,
 				298923571CC5177400BCB5EE /* Storie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

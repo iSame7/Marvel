@@ -11,6 +11,7 @@ import UIKit
 class ListInteractor: NSObject, ListInteractorInput {
 
     var output:ListInteractorOutput?
+
     // Gateway that is our abstraction for all operation of getting data from network.
     var gateway:MarvelGateway?
 
@@ -22,7 +23,7 @@ class ListInteractor: NSObject, ListInteractorInput {
 
     func getCharacters(limit limit: Int) {
 
-        MarvelFactory().characters(limit, completionHandler: { (characters) in
+        self.gateway!.characters(limit, completionHandler: { (characters) in
 
             self.output?.foundCharacters(characters)
 

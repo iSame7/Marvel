@@ -19,7 +19,7 @@ class ListPresenter: NSObject, ListInteractorOutput, ListModuleInterface {
     }
 
     func searchCharacters() {
-
+        listWireframe?.presentFilterInterface()
     }
 
     func foundCharacters(characters: [Character]) {
