@@ -340,6 +340,7 @@
         <!--Master-->
         <scene sceneID="szQ-aV-lT3">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0XM-07-mVW" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="MasterVC" title="Master" clearsSelectionOnViewWillAppear="NO" id="mxW-H2-PGJ" customClass="FilterCharactersTableViewController" customModule="Marvel" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="id8-1I-ER6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -389,13 +390,13 @@
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0XM-07-mVW" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-298" y="-703"/>
         </scene>
         <!--Filter Characters Table View Controller-->
         <scene sceneID="TaD-fC-yPd">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzj-3t-Tz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="FilterController" id="jLg-S4-cgF" customClass="FilterCharactersTableViewController" customModule="Marvel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ksq-uH-NBJ"/>
@@ -448,7 +449,6 @@
                         <outlet property="tableView" destination="m6I-eN-GcR" id="YGw-ic-iVD"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yzj-3t-Tz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-966" y="-842"/>
         </scene>
