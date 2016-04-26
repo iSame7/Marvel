@@ -229,20 +229,20 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3-D Man" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTc-Af-hNh">
-                                            <rect key="frame" x="43" y="78" width="113" height="44"/>
+                                            <rect key="frame" x="25" y="78" width="151" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="9WI-KW-0e5"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="WTc-Af-hNh" firstAttribute="centerX" secondItem="rR8-yn-onh" secondAttribute="centerX" id="Aar-ri-JHz"/>
+                                    <constraint firstItem="WTc-Af-hNh" firstAttribute="centerX" secondItem="rR8-yn-onh" secondAttribute="centerX" constant="0.5" id="Aar-ri-JHz"/>
                                     <constraint firstItem="rR8-yn-onh" firstAttribute="centerY" secondItem="q1U-6t-T2A" secondAttribute="centerY" id="Dcg-Ri-raf"/>
-                                    <constraint firstItem="WTc-Af-hNh" firstAttribute="leading" secondItem="Kxi-rC-0ZO" secondAttribute="leadingMargin" constant="35" id="KHf-yM-OQm"/>
+                                    <constraint firstItem="WTc-Af-hNh" firstAttribute="leading" secondItem="Kxi-rC-0ZO" secondAttribute="leadingMargin" constant="17" id="KHf-yM-OQm"/>
                                     <constraint firstItem="ClX-MB-rjD" firstAttribute="top" secondItem="Kxi-rC-0ZO" secondAttribute="top" id="MWR-cR-Ptp"/>
                                     <constraint firstItem="WTc-Af-hNh" firstAttribute="centerY" secondItem="rR8-yn-onh" secondAttribute="centerY" id="cNj-hY-Gw2"/>
                                     <constraint firstItem="ClX-MB-rjD" firstAttribute="leading" secondItem="Kxi-rC-0ZO" secondAttribute="leading" id="dCZ-DV-FIc"/>
