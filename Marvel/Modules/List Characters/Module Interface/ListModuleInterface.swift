@@ -16,4 +16,6 @@ protocol ListModuleInterface {
     func updateView(limit limit: Int)
 
     func searchCharacters()
+
+    func openDetailsView(selectedCellIndex: Int, characters: [Character])
 }

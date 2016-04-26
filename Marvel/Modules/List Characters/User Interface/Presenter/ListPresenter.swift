@@ -27,4 +27,8 @@ class ListPresenter: NSObject, ListInteractorOutput, ListModuleInterface {
             userInterface?.showCharacters(characters)
         }
     }
+
+    func openDetailsView(selectedCellIndex: Int, characters: [Character]) {
+        listWireframe?.PresentDetailsInterface(selectedCellIndex, characters: characters)
+    }
 }

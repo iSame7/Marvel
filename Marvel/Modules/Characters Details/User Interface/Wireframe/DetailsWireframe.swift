@@ -16,10 +16,13 @@ let marvelHeroesDetailsTableViewControllerIdentifier = "MarvelHeroesDetails"
 
 class DetailsWireframe: NSObject {
 
+    var detailsPresenter : DetailsPresenter?
+
     func navigateToDetailsInterfaceFromViewController(viewController: UIViewController, selectedCellIndex: Int, characters: [Character]) {
 
         let newViewController = marvelHeroesDetailsTableViewController()
-        //newViewController.eventHandler = addPresenter
+        newViewController.eventHandler = detailsPresenter
+        detailsPresenter?.userInterface = newViewController
         newViewController.charachterId = String(characters[selectedCellIndex].id)
         newViewController.selectedCharacterImagePath = characters[selectedCellIndex].thumbnail.path! + "." + characters[selectedCellIndex].thumbnail.thumbExtension!
         newViewController.selectedCharacterUrls = characters[selectedCellIndex].urls

@@ -56,7 +56,6 @@ class FilterWireframe: NSObject {
     func PresentDetailsInterface(selectedCellIndex: Int, characters: [Character]) {
         // Ask Details wireframe to navigate to MarvelHeroesDetailsTableViewController.
         detailsWireframe?.navigateToDetailsInterfaceFromViewController(listViewController!, selectedCellIndex: selectedCellIndex, characters: characters)
-        
     }
 
     func filterCharactersTableViewController() -> FilterCharactersTableViewController {

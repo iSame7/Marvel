@@ -15,6 +15,7 @@ import UIKit
 let ListViewControllerIdentifier = "ListViewController"
 
 class ListWireframe: NSObject {
+    var detailsWireframe : DetailsWireframe?
     var filterWireframe : FilterWireframe?
     var listPresenter : ListPresenter?
     var rootWireframe : RootWireframe?
@@ -30,6 +31,11 @@ class ListWireframe: NSObject {
 
     func presentFilterInterface() {
         filterWireframe?.presentFilterInterfaceFromViewController(listViewController!)
+    }
+
+    func PresentDetailsInterface(selectedCellIndex: Int, characters: [Character]) {
+        // Ask Details wireframe to navigate to MarvelHeroesDetailsTableViewController.
+        detailsWireframe?.navigateToDetailsInterfaceFromViewController(listViewController!, selectedCellIndex: selectedCellIndex, characters: characters)
     }
 
     func listViewControllerFromStoryboard() -> ListCharactersViewController {

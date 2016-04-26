@@ -169,7 +169,7 @@ extension ListCharactersViewController {
     }
 
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-
+/*
         // show details view controller.
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         let viewController = storyboard.instantiateViewControllerWithIdentifier("MarvelHeroesDetails") as! MarvelHeroesDetailsTableViewController
@@ -180,6 +180,8 @@ extension ListCharactersViewController {
         viewController.selectedCharacterObj = self.characters[indexPath.row]
 
         self.navigationController?.pushViewController(viewController, animated: true)
+ */
+        eventHandler?.openDetailsView(indexPath.item, characters: self.characters)
     }
 }
 

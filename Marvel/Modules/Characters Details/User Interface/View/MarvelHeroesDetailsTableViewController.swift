@@ -17,8 +17,6 @@ let blurDeltaFactor:CGFloat = 1.4
 
 class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, TableViewCellDelegate{
 
-    var categories = ["COMICS", "SERIES", "Science Fiction", "Kids", "Horror"]
-
     var charachterId:String?
 
     var selectedCharacterImagePath:String?
@@ -26,6 +24,9 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
     var selectedCharacterUrls = [Url]()
 
     var selectedCharacterObj:Character?
+
+    // Event handler or Presenter
+    var eventHandler:DetailsModuleInterface?
 
     var comics = [Comic]()
     var series = [Series]()
@@ -51,8 +52,25 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
         navigationController?.hidesBarsOnSwipe = true
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        // Update view.
+        eventHandler?.updateView(limit: 0, characterId: self.charachterId!)
+        eventHandler?.updateViewWithCharacterSeries(limit: 0, characterId: self.charachterId!)
+        eventHandler?.updateViewWithCharacterStories(limit: 0, characterId: self.charachterId!)
+        eventHandler?.updateViewWithCharacterEvents(limit: 0, characterId: self.charachterId!)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        configureView()
+    }
+
+
+    func configureView() {
+
         /*  Navigation Bar setup */
 
         // Change the navigation bar background color according to mockup.
@@ -87,58 +105,12 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
 
         }
 
-        self.getCharacterComics(self.charachterId!)
-        self.getCharacterSeries(self.charachterId!)
-        self.getCharacterStories(self.charachterId!)
-        self.getCharacterEvents(self.charachterId!)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Actions
 
     func backPressed() {
         self.navigationController?.popViewControllerAnimated(true)
-    }
-
-    func getCharacterComics(characterId: String) {
-        MarvelFactory().charactersComics(0, charachterId: characterId, completionHandler: { (comics) in
-            self.comics = comics
-            self.tableView.reloadData()
-        }) { (error) in
-
-        }
-    }
-
-    func getCharacterSeries(characterId: String) {
-        MarvelFactory().charactersSeries(0, charachterId: characterId, completionHandler: { (series) in
-            self.series = series
-            self.tableView.reloadData()
-        }) { (error) in
-
-        }
-    }
-
-    func getCharacterStories(characterId: String) {
-        MarvelFactory().charactersStories(0, charachterId: characterId, completionHandler: { (stories) in
-            print("stories \(stories.count)")
-            self.stories = stories
-            self.tableView.reloadData()
-        }) { (error) in
-
-        }
-    }
-
-    func getCharacterEvents(characterId: String) {
-        MarvelFactory().charactersEvents(0, charachterId: characterId, completionHandler: { (events) in
-            self.events = events
-            self.tableView.reloadData()
-        }) { (error) in
-
-        }
     }
 
     // MARK: - Table view data source
@@ -161,45 +133,6 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
         return Catalog.sharedInstance.categories[section]
     }
 
-    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-/*
-        let label : UILabel = UILabel()
-        label.textColor     = UIColor.redColor()
-        label.font          = UIFont.boldSystemFontOfSize(15.0)
-        label.text          = Catalog.sharedInstance.categories[section]
-
-        label.translatesAutoresizingMaskIntoConstraints = false
-
-        let constraintToAnimate: NSLayoutConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Left, multiplier: 0.25, constant: 30)
-        label.addConstraint(constraintToAnimate)
-
-        return label
- */
-
-        let view = UIView() // The width will be the same as the cell, and the height should be set in tableView:heightForRowAtIndexPath:
-
-        let label                                       = UILabel()
-        label.textColor                                 = UIColor.redColor()
-        label.font                                      = UIFont.boldSystemFontOfSize(15.0)
-        label.text                                      = Catalog.sharedInstance.categories[section]
-        label.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(label)
-        
-        // Autolayout Visual Format
-//        let horizontallayoutContraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-10-[label]-60-[button]-10-|", options: .AlignAllCenterY, metrics: nil, views: views)
-//        view.addConstraints(horizontallayoutContraints)
-
-        // Standard Programmatic Layout
-        // Autolayout equation: label.left = (view.left * multiplier) + constant
-        let constraintToAnimate: NSLayoutConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Left, multiplier: 1, constant: 10)
-
-        let bottomConstraintToAnimate: NSLayoutConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Bottom, multiplier: 1, constant: -5)
-        view.addConstraint(constraintToAnimate)
-        view.addConstraint(bottomConstraintToAnimate)
-        return view
-
-    }
-
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let retCell:UITableViewCell
@@ -219,13 +152,11 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
 
         }
         else {
-            print("Category section \(indexPath.section)")
+
             // CHARACTER CATEGORIES SECTIONS
             let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! CategoryRow
             cell.tag = indexPath.section
             cell.delegate = self
-
-//            cell.charachterId = self.charachterId
 
             if indexPath.section == 1 {
                 cell.characterComics = self.comics
@@ -239,17 +170,37 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
             else {
                 cell.characterEvents = self.events
             }
-//            else {
-//                cell.characterComics = self.comics
-//            }
+
             retCell = cell
         }
 
-
-
-        //        cell.getComics(self.charachterId!)
         return retCell
     }
+
+    // MARK: - Table view Delegate
+
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+
+        let view = UIView() // The width will be the same as the cell, and the height should be set in tableView:heightForRowAtIndexPath:
+
+        let label                                       = UILabel()
+        label.textColor                                 = UIColor.redColor()
+        label.font                                      = UIFont.boldSystemFontOfSize(15.0)
+        label.text                                      = Catalog.sharedInstance.categories[section]
+        label.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(label)
+
+        // Standard Programmatic Layout
+        // Autolayout equation: label.left = (view.left * multiplier) + constant
+        let constraintToAnimate: NSLayoutConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Left, multiplier: 1, constant: 10)
+
+        let bottomConstraintToAnimate: NSLayoutConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Bottom, multiplier: 1, constant: -5)
+        view.addConstraint(constraintToAnimate)
+        view.addConstraint(bottomConstraintToAnimate)
+        return view
+        
+    }
+
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if indexPath.section == 0 {
             // NAME AND DESCRIPTION SECTION
@@ -279,7 +230,7 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
 
         }
 
-}
+    }
 
     func delegateForCell(imageClicked: UIImageView, cellTag: Int, selectedItemIndex: Int) {
 
@@ -317,24 +268,24 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
         // There are images to be displayed.
         if imagesUrls.count > 0 {
 
-        let imageProvider = SomeImageProvider()
-        let footerView:CounterView
-        let frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 60)
+            let imageProvider = SomeImageProvider()
+            let footerView:CounterView
+            let frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 60)
 
-                 footerView = CounterView(frame: frame, currentIndex: selectedItemIndex, count: imagesUrls.count, name: chractersNames[selectedItemIndex])
+            footerView = CounterView(frame: frame, currentIndex: selectedItemIndex, count: imagesUrls.count, name: chractersNames[selectedItemIndex])
 
-        let galleryViewController = GalleryViewController(imageProvider: imageProvider, displacedView: imageClicked, imageCount: imagesUrls.count, startIndex: selectedItemIndex)
-        galleryViewController.footerView = footerView
+            let galleryViewController = GalleryViewController(imageProvider: imageProvider, displacedView: imageClicked, imageCount: imagesUrls.count, startIndex: selectedItemIndex)
+            galleryViewController.footerView = footerView
 
-        galleryViewController.launchedCompletion = { print("LAUNCHED") }
-        galleryViewController.closedCompletion = { print("CLOSED") }
-        galleryViewController.swipedToDismissCompletion = { print("SWIPE-DISMISSED") }
+            galleryViewController.launchedCompletion = { print("LAUNCHED") }
+            galleryViewController.closedCompletion = { print("CLOSED") }
+            galleryViewController.swipedToDismissCompletion = { print("SWIPE-DISMISSED") }
 
-        galleryViewController.landedPageAtIndexCompletion = { index in
-            print("LANDED AT INDEX: \(index)")
-            footerView.currentIndex = index
-            footerView.name = chractersNames[index]
-        }
+            galleryViewController.landedPageAtIndexCompletion = { index in
+                print("LANDED AT INDEX: \(index)")
+                footerView.currentIndex = index
+                footerView.name = chractersNames[index]
+            }
 
 
             self.presentImageGallery(galleryViewController)
@@ -343,6 +294,32 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
     }
 
 }
+
+// MARK: - MarvelHeroesDetailsTableViewController DetailsViewInterface extension
+
+extension MarvelHeroesDetailsTableViewController: DetailsViewInterface {
+    func showCharacterComics(comics: [Comic]) {
+        self.comics = comics
+        self.tableView.reloadData()
+    }
+
+    func showCharacterSeries(series: [Series]) {
+        self.series = series
+        self.tableView.reloadData()
+    }
+
+    func showCharacterStories(stories: [Stories]) {
+        self.stories = stories
+        self.tableView.reloadData()
+    }
+
+    func showCharacterEvents(events: [Events]) {
+        self.events = events
+        self.tableView.reloadData()
+    }
+}
+
+// MARK: - SomeImageProvider
 
 class SomeImageProvider: ImageProvider {
 
@@ -361,34 +338,12 @@ class SomeImageProvider: ImageProvider {
             //            self.image[index] = image
             print("Image featched")
             completion(image)
-
+            
         }
-
+        
     }
     //        completion(images[index])
 }
-
-let images = [
-    UIImage(named: ""),
-    UIImage(named: ""),
-    UIImage(named: ""),
-    UIImage(named: ""),
-    UIImage(named: ""),
-    UIImage(named: ""),
-    UIImage(named: ""),
-    UIImage(named: "")]
-
-/*
-var imagesUrls = [
-    "http://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec.jpg",
-    "http://i.annihil.us/u/prod/marvel/i/mg/9/50/4ce18691cbf04.jpg",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""]
- */
 
 var imagesUrls = [String]()
 var chractersNames = [String]()

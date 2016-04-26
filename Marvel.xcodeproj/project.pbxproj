@@ -21,6 +21,10 @@
 		294CA39A1CCE9E6D00518FEB /* DetailsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3991CCE9E6D00518FEB /* DetailsWireframe.swift */; };
 		294CA39C1CCED22600518FEB /* FilterInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA39B1CCED22600518FEB /* FilterInteractorIO.swift */; };
 		294CA39E1CCED42500518FEB /* FilterViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA39D1CCED42500518FEB /* FilterViewInterface.swift */; };
+		294CA3A21CCF033B00518FEB /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3A11CCF033B00518FEB /* DetailsInteractor.swift */; };
+		294CA3A41CCF036900518FEB /* DetailsInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3A31CCF036900518FEB /* DetailsInteractorIO.swift */; };
+		294CA3A71CCF042500518FEB /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3A61CCF042500518FEB /* DetailsPresenter.swift */; };
+		294CA3AA1CCF04D500518FEB /* DetailsModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CA3A91CCF04D500518FEB /* DetailsModuleInterface.swift */; };
 		296F5AC41CC6FF42000BA496 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296F5AC31CC6FF42000BA496 /* ListInteractor.swift */; };
 		296F5AC61CC6FF55000BA496 /* ListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296F5AC51CC6FF55000BA496 /* ListInteractorIO.swift */; };
 		296F5AC91CC7058B000BA496 /* ListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296F5AC81CC7058B000BA496 /* ListModuleInterface.swift */; };
@@ -41,6 +45,7 @@
 		298923591CC5177400BCB5EE /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989234F1CC5177400BCB5EE /* Url.swift */; };
 		298EE3481CC5C564008AE608 /* MarvelAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298EE3471CC5C564008AE608 /* MarvelAuthenticationTests.swift */; };
 		29A1E3271CCC18CA0091A72A /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A1E3261CCC18CA0091A72A /* CounterView.swift */; };
+		29AFFCE41CCF7E39002B9B40 /* DetailsViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AFFCE31CCF7E39002B9B40 /* DetailsViewInterface.swift */; };
 		29BF4EF31CC80A3B00C0194F /* MarvelHeroesDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4EF21CC80A3B00C0194F /* MarvelHeroesDetailsTableViewController.swift */; };
 		29BF4F011CC8297400C0194F /* FooterReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F001CC8297400C0194F /* FooterReusableView.swift */; };
 		29BF4F031CC8591800C0194F /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F021CC8591800C0194F /* CategoryRow.swift */; };
@@ -132,6 +137,10 @@
 		294CA3991CCE9E6D00518FEB /* DetailsWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsWireframe.swift; sourceTree = "<group>"; };
 		294CA39B1CCED22600518FEB /* FilterInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterInteractorIO.swift; sourceTree = "<group>"; };
 		294CA39D1CCED42500518FEB /* FilterViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewInterface.swift; sourceTree = "<group>"; };
+		294CA3A11CCF033B00518FEB /* DetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		294CA3A31CCF036900518FEB /* DetailsInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInteractorIO.swift; sourceTree = "<group>"; };
+		294CA3A61CCF042500518FEB /* DetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		294CA3A91CCF04D500518FEB /* DetailsModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsModuleInterface.swift; sourceTree = "<group>"; };
 		296F5AC31CC6FF42000BA496 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		296F5AC51CC6FF55000BA496 /* ListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorIO.swift; sourceTree = "<group>"; };
 		296F5AC81CC7058B000BA496 /* ListModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModuleInterface.swift; sourceTree = "<group>"; };
@@ -153,6 +162,7 @@
 		2989235A1CC5408700BCB5EE /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcommonCrypto.tbd; path = usr/lib/system/libcommonCrypto.tbd; sourceTree = SDKROOT; };
 		298EE3471CC5C564008AE608 /* MarvelAuthenticationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelAuthenticationTests.swift; sourceTree = "<group>"; };
 		29A1E3261CCC18CA0091A72A /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		29AFFCE31CCF7E39002B9B40 /* DetailsViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewInterface.swift; sourceTree = "<group>"; };
 		29BF4EF21CC80A3B00C0194F /* MarvelHeroesDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelHeroesDetailsTableViewController.swift; sourceTree = "<group>"; };
 		29BF4F001CC8297400C0194F /* FooterReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FooterReusableView.swift; path = "../../../List Characters/User Interface/View/FooterReusableView.swift"; sourceTree = "<group>"; };
 		29BF4F021CC8591800C0194F /* CategoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
@@ -348,6 +358,39 @@
 			path = Wireframe;
 			sourceTree = "<group>";
 		};
+		294CA39F1CCF02E600518FEB /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				294CA3A01CCF030900518FEB /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		294CA3A01CCF030900518FEB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				294CA3A11CCF033B00518FEB /* DetailsInteractor.swift */,
+				294CA3A31CCF036900518FEB /* DetailsInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		294CA3A51CCF040400518FEB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				294CA3A61CCF042500518FEB /* DetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		294CA3A81CCF045800518FEB /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				294CA3A91CCF04D500518FEB /* DetailsModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
 		296F5AC01CC6FCE5000BA496 /* Application Logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +427,7 @@
 		296F5ACD1CC7CCCD000BA496 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				294CA3A51CCF040400518FEB /* Presenter */,
 				294CA3981CCE9E1500518FEB /* Wireframe */,
 				296F5ACE1CC7CCDA000BA496 /* View */,
 			);
@@ -401,6 +445,7 @@
 				29BF4F4D1CCA54F200C0194F /* RelatedLinksTableViewCell.swift */,
 				29BF4F001CC8297400C0194F /* FooterReusableView.swift */,
 				29A1E3261CCC18CA0091A72A /* CounterView.swift */,
+				29AFFCE31CCF7E39002B9B40 /* DetailsViewInterface.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -636,6 +681,8 @@
 		29E68A151CC43B06007211D8 /* Characters Details */ = {
 			isa = PBXGroup;
 			children = (
+				294CA39F1CCF02E600518FEB /* Application Logic */,
+				294CA3A81CCF045800518FEB /* Module Interface */,
 				296F5ACD1CC7CCCD000BA496 /* User Interface */,
 			);
 			path = "Characters Details";
@@ -918,6 +965,7 @@
 				296F5AC91CC7058B000BA496 /* ListModuleInterface.swift in Sources */,
 				29BF4F4C1CCA412A00C0194F /* ParallaxTableViewController.swift in Sources */,
 				29BF4F791CCAD85400C0194F /* EventsData.swift in Sources */,
+				294CA3AA1CCF04D500518FEB /* DetailsModuleInterface.swift in Sources */,
 				298923551CC5177400BCB5EE /* RootClass.swift in Sources */,
 				29E68A071CC43429007211D8 /* ListCharactersViewController.swift in Sources */,
 				29BF4F1E1CC8D6DE00C0194F /* Comic.swift in Sources */,
@@ -937,10 +985,12 @@
 				294CA39E1CCED42500518FEB /* FilterViewInterface.swift in Sources */,
 				29BF4F471CC9D0BF00C0194F /* UIImageEffects.swift in Sources */,
 				29E689F41CC433E6007211D8 /* AppDelegate.swift in Sources */,
+				29AFFCE41CCF7E39002B9B40 /* DetailsViewInterface.swift in Sources */,
 				296F5AC41CC6FF42000BA496 /* ListInteractor.swift in Sources */,
 				29E689FE1CC4341D007211D8 /* Inspiration.swift in Sources */,
 				294CA3921CCE935B00518FEB /* FilterCharactersTableViewController.swift in Sources */,
 				29BF4F221CC8D6DE00C0194F /* TextObject.swift in Sources */,
+				294CA3A41CCF036900518FEB /* DetailsInteractorIO.swift in Sources */,
 				29BF4F7C1CCAD85400C0194F /* Previou.swift in Sources */,
 				29E689FF1CC4341D007211D8 /* Session.swift in Sources */,
 				29F04D5B1CC18C300082AB14 /* DetailViewController.swift in Sources */,
@@ -977,8 +1027,10 @@
 				29BF4F3C1CC9C34200C0194F /* SeriesData.swift in Sources */,
 				294CA3971CCE98A400518FEB /* FilterModuleDelegateInterface.swift in Sources */,
 				298923521CC5177400BCB5EE /* Event.swift in Sources */,
+				294CA3A21CCF033B00518FEB /* DetailsInteractor.swift in Sources */,
 				29BF4F1F1CC8D6DE00C0194F /* ComicRootClass.swift in Sources */,
 				29BF4F181CC8D6DE00C0194F /* ComicData.swift in Sources */,
+				294CA3A71CCF042500518FEB /* DetailsPresenter.swift in Sources */,
 				294CA39C1CCED22600518FEB /* FilterInteractorIO.swift in Sources */,
 				298923231CC4F6B000BCB5EE /* MarvelGateway.swift in Sources */,
 				29BF4F501CCA86F400C0194F /* String+ UppercaseFirst.swift in Sources */,
