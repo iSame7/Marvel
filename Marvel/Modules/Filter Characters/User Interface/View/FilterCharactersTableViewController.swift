@@ -21,19 +21,20 @@ class FilterCharactersTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // background
+
+        configureView()
+    }
+
+    func configureView() {
+
+        // tableView background
         tableView.backgroundColor = UIColor.colorFromRGB(39, g: 43, b: 47)
 
-        /* 
-        Table views show separators between empty rows by default, which looks quite strange when you have only a handful of visible rows.
+        /*
+         Table views show separators between empty rows by default, which looks quite strange when you have only a handful of visible rows.
          What's actually happening is that you're creating an empty UIView and making it act as the footer of the table – this is the bottom most thing visible in the table. When iOS reaches the bottom of the cells you provide, it draws this view at the end rather than drawing empty rows and their separators, so it totally clears up the problem.
          */
         tableView.tableFooterView = UIView()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source

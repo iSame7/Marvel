@@ -8,6 +8,8 @@
 
 import UIKit
 
+import ImageViewer
+
 /***
  Routes from one screen to another are defined in the wireframes created by an interaction designer. In VIPER, the responsibility for Routing is shared between two objects: the Presenter, and the wireframe. A wireframe object owns the UIWindow, UINavigationController, UIViewController, etc. It is responsible for creating a View/ViewController and installing it in the window.
  */
@@ -17,11 +19,14 @@ let marvelHeroesDetailsTableViewControllerIdentifier = "MarvelHeroesDetails"
 class DetailsWireframe: NSObject {
 
     var detailsPresenter : DetailsPresenter?
+    var detailsTableViewController : MarvelHeroesDetailsTableViewController?
+
 
     func navigateToDetailsInterfaceFromViewController(viewController: UIViewController, selectedCellIndex: Int, characters: [Character]) {
 
         let newViewController = marvelHeroesDetailsTableViewController()
         newViewController.eventHandler = detailsPresenter
+        detailsTableViewController = newViewController
         detailsPresenter?.userInterface = newViewController
         newViewController.charachterId = String(characters[selectedCellIndex].id)
         newViewController.selectedCharacterImagePath = characters[selectedCellIndex].thumbnail.path! + "." + characters[selectedCellIndex].thumbnail.thumbExtension!
@@ -29,6 +34,11 @@ class DetailsWireframe: NSObject {
         newViewController.selectedCharacterObj = characters[selectedCellIndex]
 
         viewController.navigationController?.pushViewController(newViewController, animated: true)
+    }
+
+    func presentImageViewerInterfaceFromViewController(galleryViewController: GalleryViewController) {
+
+        self.detailsTableViewController!.presentImageGallery(galleryViewController)
     }
 
     func marvelHeroesDetailsTableViewController() -> MarvelHeroesDetailsTableViewController {

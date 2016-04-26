@@ -17,23 +17,28 @@ let blurDeltaFactor:CGFloat = 1.4
 
 class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, TableViewCellDelegate{
 
+    // Selected character ID from ListCharactersViewController.
     var charachterId:String?
 
+    // Selected character image path from ListCharactersViewController.
     var selectedCharacterImagePath:String?
 
+    // Selected character urls from ListCharactersViewController.
     var selectedCharacterUrls = [Url]()
 
+    // Selected character from ListCharactersViewController.
     var selectedCharacterObj:Character?
 
     // Event handler or Presenter
     var eventHandler:DetailsModuleInterface?
 
-    var comics = [Comic]()
-    var series = [Series]()
-    var stories = [Stories]()
-    var events = [Events]()
-
     private var imagePreviewer: ImageViewer!
+
+    private var comics = [Comic]()
+    private var series = [Series]()
+    private var stories = [Stories]()
+    private var events = [Events]()
+
 
     init(charachterId: String) {
         self.charachterId = charachterId
@@ -198,7 +203,7 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
         view.addConstraint(constraintToAnimate)
         view.addConstraint(bottomConstraintToAnimate)
         return view
-        
+
     }
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -232,7 +237,13 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
 
     }
 
+    // MARK: TableViewCellDelegate
+
+    // Delegate method that tell our view controller that a CategoryRow cell has been clicked.
     func delegateForCell(imageClicked: UIImageView, cellTag: Int, selectedItemIndex: Int) {
+
+        imagesUrls = [String]()
+        chractersNames = [String]()
 
         if cellTag == 1 {
             for comic in self.comics {
@@ -277,18 +288,23 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
             let galleryViewController = GalleryViewController(imageProvider: imageProvider, displacedView: imageClicked, imageCount: imagesUrls.count, startIndex: selectedItemIndex)
             galleryViewController.footerView = footerView
 
-            galleryViewController.launchedCompletion = { print("LAUNCHED") }
-            galleryViewController.closedCompletion = { print("CLOSED") }
-            galleryViewController.swipedToDismissCompletion = { print("SWIPE-DISMISSED") }
+            galleryViewController.launchedCompletion = {
+
+            }
+            galleryViewController.closedCompletion = {
+
+            }
+            galleryViewController.swipedToDismissCompletion = {
+
+            }
 
             galleryViewController.landedPageAtIndexCompletion = { index in
-                print("LANDED AT INDEX: \(index)")
+                //print("LANDED AT INDEX: \(index)")
                 footerView.currentIndex = index
                 footerView.name = chractersNames[index]
             }
 
-
-            self.presentImageGallery(galleryViewController)
+            self.eventHandler?.openImageViewer(galleryViewController)
         }
 
     }
@@ -321,30 +337,25 @@ extension MarvelHeroesDetailsTableViewController: DetailsViewInterface {
 
 // MARK: - SomeImageProvider
 
-class SomeImageProvider: ImageProvider {
+var imagesUrls = [String]()
+var chractersNames = [String]()
 
+class SomeImageProvider: ImageProvider {
+    
     func provideImage(completion: UIImage? -> Void) {
         completion(UIImage(named: "image_big"))
     }
-
+    
     func provideImage(atIndex index: Int, completion: UIImage? -> Void) {
-
-        print("imageURL \(imagesUrls[index])")
+        
         let URL = NSURL(string: imagesUrls[index])!
         let fetcher = NetworkFetcher<UIImage>(URL: URL)
         let cache = Shared.imageCache
         cache.fetch(fetcher: fetcher).onSuccess { image in
             // Do something with image
-            //            self.image[index] = image
-            print("Image featched")
             completion(image)
             
         }
         
     }
-    //        completion(images[index])
 }
-
-var imagesUrls = [String]()
-var chractersNames = [String]()
-

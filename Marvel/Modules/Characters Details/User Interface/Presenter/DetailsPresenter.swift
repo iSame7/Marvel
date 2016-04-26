@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ImageViewer
 
 class DetailsPresenter: NSObject, DetailsInteractorOutput, DetailsModuleInterface {
 
@@ -46,5 +47,9 @@ class DetailsPresenter: NSObject, DetailsInteractorOutput, DetailsModuleInterfac
 
     func foundCharactersEvents(events: [Events]) {
         userInterface?.showCharacterEvents(events)
+    }
+
+    func openImageViewer(galleryViewController: GalleryViewController) {
+        detialsWireframe?.presentImageViewerInterfaceFromViewController(galleryViewController)
     }
 }

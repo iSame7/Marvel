@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ImageViewer
 
 protocol DetailsModuleInterface {
 
@@ -20,5 +21,8 @@ protocol DetailsModuleInterface {
     func updateViewWithCharacterStories (limit limit: Int, characterId: String)
 
     func updateViewWithCharacterEvents (limit limit: Int, characterId: String)
-    
+
+    func openImageViewer(galleryViewController: GalleryViewController)
+
+
 }
