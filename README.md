@@ -184,7 +184,7 @@ I used this techniqe in the network layer:
 
 The classic way to invert a dependency is to extract a protocol. (If you’re an Android developer, when you see “protocol,” think “interface.”) We’ll call it the Marvel Gateway. In the following diagram, it’s marked with <P> to show that it’s a protocol:
 
-<img src="Request-Model.png" alt="DIP" width="320px"/>
+<img src="Request-Model.png" alt="DIP" width="320px" align="middle"/>
 
 To make our API service layer more ignorant about most of the app, it has to implement the marvel gateway protocol. The prtocol act as a contract.
 Thanks to Dependency Inversion, the rest of the app can now be ignorant. It knows about the contract, but not about any class that satisfies that contract.
