@@ -14,6 +14,16 @@ iOS Marvel client app enable users to browse Marvel characters. Developed using 
 <img src="screenshot-1.png" alt="Screenshot" width="320px"/>
 <img src="screenshot-2.png" alt="Screenshot" width="320px" />
 
+## App Description
+
+Using this application, users will be able to browse through the Marvel library of characters. The data is available by connecting to the Marvel API http://developer.marvel.com .
+
+**App use cases**
+
+* List of Characters
+In this view, you should present a list of characters loaded from the Marvel API character index. Notice that the when reaching the end of the list, if there are additional results to show, you should load and present the next page.
+
+
 ## Installation
 
 Just clone the repo or download it in zip-file, Open the project in Xcode then test it on your iOS device or iOS simulator.
