@@ -201,5 +201,25 @@ VIPER is an application of Clean Architecture to iOS apps. The word VIPER is a b
 
 **Why VIPER**:
 
+*Smaller files*:
+
+- VIPER (without a few exceptions:) ) has very clear politics about responsibility for each component. It helps with reducing amount of code in files and putting into the right place according to a single responsibility principle. 
+
+*Better code coverage*: 
+
+- Smaller classes mean smaller test cases as well. Tests resort less to exotic tricks and are simpler to read. The barrier to entry to write unit tests is lower, so more developers write them. 
+
+*Good for unit testing*:
+
+- On the basis of VIPER principles, everything in one module is very well separated, so it creates good environment for unit testing. Look at [this](http://iosunittesting.com/tdd-with-viper/?utm_source=swifting.io) article regarding more info about TDD in VIPER.
+
+*VIPER modules Generators* : 
+
+If you really want to make your application based on VIPER architecture, do not even think to make it all manually. It will be a disaster! You need an automated process to create a new module.
+
+By the way I've created an opens source tool that automate the process of generating VIPER modules. A simple OS X App for generating VIPER modules's skeleton to use them in your Objective-C/Swift projects.
+
+* [ViperCode](https://github.com/iSame7/ViperCode)
+
 
 
