@@ -158,8 +158,13 @@ In case you want to change the project setup like Marvel API keys:
 **Common** : Contains common behavior between VIPER modules like RootWireframe, all modules wireframes use this RootWireframe.
 
 **Extensions** : Contains different Extensions like Color and image extension.
+
 **Models** : Contains App Model layer.
+
 **Assets** : Contains all resources like images used in the App.
+
 **Utility** : Contains app utility classes like AppConstants that is a shared constant class between all classes.
+
 **Marvel Base** : Is the core engine of the project.It contain the Networking logic (Networking.swift), `MarvelGateway.swift` that is implemented to acheive the Dependency Inversion Principle between networking logic and the rest of the App. And `MarvelFactory.swift` that implement/adopt to `MarvelGateway.swift` and finally the app dealing with it to get data from te network.
+
 **Modules** : Contains all VIPER Architecteure design patterns modules. Every module has it's owen layer/components like Interactor, Presenter, View, Entity, Routing a.k.a (Wireframe).
