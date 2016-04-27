@@ -213,13 +213,39 @@ VIPER is an application of Clean Architecture to iOS apps. The word VIPER is a b
 
 - On the basis of VIPER principles, everything in one module is very well separated, so it creates good environment for unit testing. Look at [this](http://iosunittesting.com/tdd-with-viper/?utm_source=swifting.io) article regarding more info about TDD in VIPER.
 
-*VIPER modules Generators* : 
+**VIPER modules Generators** : 
 
 If you really want to make your application based on VIPER architecture, do not even think to make it all manually. It will be a disaster! You need an automated process to create a new module.
 
 By the way I've created an opens source tool that automate the process of generating VIPER modules. A simple OS X App for generating VIPER modules's skeleton to use them in your Objective-C/Swift projects.
+You can download it now:
 
 * [ViperCode](https://github.com/iSame7/ViperCode)
 
 
+# Dependency Injection:
 
+Use of VIPER architecture gives great possibility to apply dependency injection. For example, let’s consider an example of a presenter:
+
+```swift
+class ListPresenter: NSObject, ListInteractorOutput, ListModuleInterface {
+
+    var listInteractor : ListInteractorInput?
+    var listWireframe : ListWireframe?
+    var userInterface : ListViewInterface?
+
+    func updateView(limit limit: Int) {
+        listInteractor?.getCharacters(limit: limit)
+    }
+
+    func searchCharacters() {
+        listWireframe?.presentFilterInterface()
+    }
+
+    func foundCharacters(characters: [Character]) {
+        if characters.count > 0 {
+            userInterface?.showCharacters(characters)
+        }
+    }
+...
+```
