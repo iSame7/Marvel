@@ -8,7 +8,6 @@ Marvel
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
 
-
-# Marvel
+## Overview
 iOS Marvel client app enable users to browse Marvel characters. Developed using VIPER and TDD.
 
