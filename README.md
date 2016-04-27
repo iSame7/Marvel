@@ -145,11 +145,10 @@ In case you want to change the project setup like Marvel API keys:
 |   +-- ListInteractorTests.swift
 |   +-- FilterInteractorTests.swift
 |   +-- DetailsInteractorTests.swift
-
 +-- Presenter
-|   +-- VIPERPresenterTests.swift
+|   +-- ListPresenterTests.swift
+|   +-- FilterPresenterTests.swift
+|   +-- DetailsPresenterTests.swift
 +-- ViewController
-|   +-- VIPERViewTests.swift
-+-- WireFrame
-|   +-- VIPERWireFrameTests.swift
+|   +-- ListViewTests.swift
 ```
