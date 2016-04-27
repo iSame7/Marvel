@@ -154,7 +154,9 @@ In case you want to change the project setup like Marvel API keys:
 ```
 
 **AppDependencies** : Contains the code that responsible for VIPER module configuration.
+
 **Common** : Contains common behavior between VIPER modules like RootWireframe, all modules wireframes use this RootWireframe.
+
 **Extensions** : Contains different Extensions like Color and image extension.
 **Models** : Contains App Model layer.
 **Assets** : Contains all resources like images used in the App.
