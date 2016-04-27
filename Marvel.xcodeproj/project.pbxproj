@@ -84,7 +84,7 @@
 		29BF4F491CCA2E0B00C0194F /* CharacterDetailsTopCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F481CCA2E0B00C0194F /* CharacterDetailsTopCellTableViewCell.swift */; };
 		29BF4F4C1CCA412A00C0194F /* ParallaxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F4B1CCA412A00C0194F /* ParallaxTableViewController.swift */; };
 		29BF4F4E1CCA54F200C0194F /* RelatedLinksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F4D1CCA54F200C0194F /* RelatedLinksTableViewCell.swift */; };
-		29BF4F501CCA86F400C0194F /* String+ UppercaseFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F4F1CCA86F400C0194F /* String+ UppercaseFirst.swift */; };
+		29BF4F501CCA86F400C0194F /* String+UppercaseFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F4F1CCA86F400C0194F /* String+UppercaseFirst.swift */; };
 		29BF4F5F1CCAC97E00C0194F /* StoriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F551CCAC97D00C0194F /* StoriesData.swift */; };
 		29BF4F621CCAC97E00C0194F /* OriginalIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F581CCAC97D00C0194F /* OriginalIssue.swift */; };
 		29BF4F631CCAC97E00C0194F /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF4F591CCAC97D00C0194F /* Stories.swift */; };
@@ -209,7 +209,7 @@
 		29BF4F481CCA2E0B00C0194F /* CharacterDetailsTopCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsTopCellTableViewCell.swift; sourceTree = "<group>"; };
 		29BF4F4B1CCA412A00C0194F /* ParallaxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxTableViewController.swift; sourceTree = "<group>"; };
 		29BF4F4D1CCA54F200C0194F /* RelatedLinksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelatedLinksTableViewCell.swift; sourceTree = "<group>"; };
-		29BF4F4F1CCA86F400C0194F /* String+ UppercaseFirst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ UppercaseFirst.swift"; sourceTree = "<group>"; };
+		29BF4F4F1CCA86F400C0194F /* String+UppercaseFirst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+UppercaseFirst.swift"; sourceTree = "<group>"; };
 		29BF4F551CCAC97D00C0194F /* StoriesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesData.swift; sourceTree = "<group>"; };
 		29BF4F581CCAC97D00C0194F /* OriginalIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalIssue.swift; sourceTree = "<group>"; };
 		29BF4F591CCAC97D00C0194F /* Stories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
@@ -591,7 +591,7 @@
 				29E689F71CC43413007211D8 /* UIColor+Palette.swift */,
 				29E689F81CC43413007211D8 /* UIImage+Decompression.swift */,
 				29BF4F461CC9D0BF00C0194F /* UIImageEffects.swift */,
-				29BF4F4F1CCA86F400C0194F /* String+ UppercaseFirst.swift */,
+				29BF4F4F1CCA86F400C0194F /* String+UppercaseFirst.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -624,9 +624,9 @@
 		29E68A001CC43429007211D8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				29E68A011CC43429007211D8 /* List Characters */,
 				29C1613E1CCC700000C595B1 /* Filter Characters */,
 				29E68A151CC43B06007211D8 /* Characters Details */,
-				29E68A011CC43429007211D8 /* List Characters */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1066,7 +1066,7 @@
 				294CA3A71CCF042500518FEB /* DetailsPresenter.swift in Sources */,
 				294CA39C1CCED22600518FEB /* FilterInteractorIO.swift in Sources */,
 				298923231CC4F6B000BCB5EE /* MarvelGateway.swift in Sources */,
-				29BF4F501CCA86F400C0194F /* String+ UppercaseFirst.swift in Sources */,
+				29BF4F501CCA86F400C0194F /* String+UppercaseFirst.swift in Sources */,
 				294CA3791CCE624D00518FEB /* AppDependencies.swift in Sources */,
 				29BF4F191CC8D6DE00C0194F /* Date.swift in Sources */,
 				294CA37D1CCE863100518FEB /* FilterPresenter.swift in Sources */,

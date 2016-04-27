@@ -49,7 +49,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv0-Kd-hN3">
-                                            <rect key="frame" x="8" y="37" width="45" height="18"/>
+                                            <rect key="frame" x="8" y="30" width="45" height="18"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -75,7 +75,7 @@
                                         <constraint firstItem="o5F-j3-9Pi" firstAttribute="leading" secondItem="0TW-dD-upV" secondAttribute="leadingMargin" id="BRV-RK-lHa"/>
                                         <constraint firstItem="RJr-Ja-wqb" firstAttribute="top" secondItem="o5F-j3-9Pi" secondAttribute="bottom" constant="14" id="EJg-QD-dF5"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="o5F-j3-9Pi" secondAttribute="trailing" constant="-8" id="Ix4-i6-4Db"/>
-                                        <constraint firstItem="o5F-j3-9Pi" firstAttribute="top" secondItem="Hv0-Kd-hN3" secondAttribute="bottom" constant="2" id="e5A-pj-mWc"/>
+                                        <constraint firstItem="o5F-j3-9Pi" firstAttribute="top" secondItem="Hv0-Kd-hN3" secondAttribute="bottom" constant="9" id="e5A-pj-mWc"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="peJ-4v-S7l" secondAttribute="trailing" id="fQt-vE-NQ4"/>
                                         <constraint firstItem="peJ-4v-S7l" firstAttribute="leading" secondItem="0TW-dD-upV" secondAttribute="leadingMargin" id="hTf-Xx-0aW"/>
                                         <constraint firstItem="RJr-Ja-wqb" firstAttribute="leading" secondItem="o5F-j3-9Pi" secondAttribute="leading" id="s7T-I5-cAY"/>
