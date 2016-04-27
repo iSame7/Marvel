@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Defines the public interface that something else can use to drive the user interface
 protocol DetailsViewInterface {
     func showCharacterComics(comics: [Comic])
     func showCharacterSeries(series: [Series])

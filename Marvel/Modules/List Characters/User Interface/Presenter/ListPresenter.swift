@@ -8,6 +8,9 @@
 
 import UIKit
 
+/* 
+ contains view logic for preparing content for display (as received from the Interactor) and for reacting to user inputs (by requesting new data from the Interactor).
+ */
 class ListPresenter: NSObject, ListInteractorOutput, ListModuleInterface {
 
     var listInteractor : ListInteractorInput?
