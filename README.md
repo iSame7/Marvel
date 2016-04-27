@@ -33,8 +33,6 @@ Using this application, users will be able to browse through the Marvel library 
 - When selecting a character, you should present a detail view of that character. Most of this information is already available on the result of the first API call, except for the images to be presented on the comics/series/stories/events sections. Those images can be fetched from the resourceURI and should be lazy loaded. That same behaviour is expected when expanding those images.
 
 
-
-
 ## Installation
 
 Just clone the repo or download it in zip-file, Open the project in Xcode then test it on your iOS device or iOS simulator.
@@ -43,3 +41,115 @@ In case you want to change the project setup like Marvel API keys:
 
 * Get your own keys from http://developer.marvel.com
 * Inside Marvel/Marvel/AppConstants, change `KMarvelFactory_PublicKey` and `KMarvelFactory_PrivateKey` with your owen keys.
+
+
+# Xcode Project files structure
+```bash
+.swift
++-- AppDependencies
+|   +-- AppDependencies.swift
++-- Common
+|   +-- RootWireframe.swift
++-- AppDelegate
+|   +-- AppDelegate.swift
++-- Storyboards
+|   +-- Main.storyboard
+|   +-- LaunchScreen.storyboard
++-- Extensions
+|   +-- UIColor+Palette.swift
+|   +-- UIImage+Decompression.swift
+|   +-- UIImageEffects.swift
+|   +-- String+UppercaseFirst.swift
++-- Models
+|   +-- Catalog.swift
+|   +-- Character Events
+|   +-- Character Stories
+|   +-- Charachter Series
+|   +-- CharachterComics
+|   +-- Charachter
++-- Assets
+|   +-- Assets.xcassets
++-- Utility
+|   +-- AppConstants
+    |   +-- AppConstants
+        |   +-- AppConstants.swift
++-- Marvel Base
+|   +-- Networking
+    |   +-- Factory
+        |   +-- MarvelFactory.swift
+        |   +-- MarvelFactory+Comics.swift
+        |   +-- MarvelFactory+Series.swift
+        |   +-- MarvelFactory+Story.swift
+        |   +-- MarvelFactory+Events.swift
+    |   +-- Client
+        |   +-- Networking.swift
+    |   +-- MarvelGateway.swift
++-- Modules
+|   +-- List Characters
+    |   +-- Application Logic
+        |   +-- ListInteractor.swift
+        |   +-- ListInteractorIO.swift
+    |   +-- Module Interface
+        |   +-- ListModuleInterface.swift
+    |   +-- User Interface
+        |   +-- Presenter
+            |   +-- ListPresenter.swift
+        |   +-- View
+            |   +-- ListCharactersViewController.swift
+            |   +-- SlidingMenuCell.swift
+            |   +-- SlidingMenuLayout.swift
+            |   +-- ListViewInterface.swift
+        |   +-- Wireframe
+            |   +-- ListWireframe.swift
+|   +-- Filter Characters
+    |   +-- Application Logic
+        |   +-- FilterInteractor.swift
+        |   +-- FilterInteractorIO.swift
+    |   +-- Module Interface
+        |   +-- FilterModuleInterface.swift
+    |   +-- User Interface
+        |   +-- Presenter
+            |   +-- FilterPresenter.swift
+        |   +-- View
+            |   +-- FilterCharactersTableViewController.swift
+            |   +-- FilterTableViewCell.swift
+            |   +-- FilterViewInterface.swift
+        |   +-- Wireframe
+            |   +-- FilterWireframe.swift
+|   +-- Characters Details
+    |   +-- Application Logic
+        |   +-- DetailsInteractor.swift
+        |   +-- DetailsInteractorIO.swift
+    |   +-- Module Interface
+        |   +-- DetailsModuleInterface.swift
+    |   +-- User Interface
+        |   +-- Presenter
+            |   +-- DetailsPresenter.swift
+        |   +-- View
+            |   +-- Parallex Transition
+                |   +-- ParallaxTableViewController.swift
+            |   +-- MarvelHeroesDetailsTableViewController.swift
+            |   +-- CategoryRow.swift
+            |   +-- CharacterSectionCollectionViewCell.swift
+            |   +-- CharacterDetailsTopCellTableViewCell
+            |   +-- RelatedLinksTableViewCell.swift
+            |   +-- FooterReusableView.swift
+            |   +-- CounterView.swift
+            |   +-- DetailsViewInterface.swift
+        |   +-- Wireframe
+            |   +-- DetailsWireframe.swift
+            
+.swift tests
++-- MarvelAuthenticationTests.swift 
++-- Interactor
+|   +-- ListInteractorTests.swift
+|   +-- FilterInteractorTests.swift
+|   +-- DetailsInteractorTests.swift
+
++-- Presenter
+|   +-- VIPERPresenterTests.swift
++-- ViewController
+|   +-- VIPERViewTests.swift
++-- WireFrame
+|   +-- VIPERWireFrameTests.swift
+```
