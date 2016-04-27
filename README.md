@@ -153,7 +153,7 @@ In case you want to change the project setup like Marvel API keys:
 |   +-- ListViewTests.swift
 ```
 
-**AppDependencies** : Contains the code that responsible for VIPER module configuration.
+**AppDependencies** : Contains the code that is responsible for VIPER's module configuration.
 
 **Common** : Contains common behavior between VIPER modules like RootWireframe, all modules wireframes use this RootWireframe.
 
