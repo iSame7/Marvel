@@ -22,6 +22,8 @@ class ListCharactersViewController: UICollectionViewController {
     // Event handler or Presenter
     var eventHandler:ListModuleInterface?
 
+    var strongCollectionView: UICollectionView?
+
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
@@ -29,6 +31,7 @@ class ListCharactersViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.strongCollectionView = self.collectionView
         configureView()
     }
 
@@ -91,6 +94,8 @@ class ListCharactersViewController: UICollectionViewController {
 extension ListCharactersViewController: ListViewInterface {
 
     func showCharacters(characters: [Character]) {
+
+        self.view = self.strongCollectionView
         self.characters = characters
         self.collectionView?.reloadData()
     }

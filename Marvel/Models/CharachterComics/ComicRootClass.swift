@@ -19,7 +19,7 @@ class ComicRootClass: BaseRootClass{
         super.init()
 		self.attributionHTML = dictionary["attributionHTML"] as? String
 		self.attributionText = dictionary["attributionText"] as? String
-		self.code = (dictionary["code"] as? NSString)?.integerValue
+		self.code = (dictionary["code"] as? Int)
 		self.copyright = dictionary["copyright"] as? String
 		if let dataData = dictionary["data"] as? NSDictionary{
 				data = ComicData(fromDictionary: dataData)

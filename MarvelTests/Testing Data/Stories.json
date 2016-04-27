@@ -1,0 +1,202 @@
+{
+    "code": 200,
+    "status": "Ok",
+    "copyright": "© 2016 MARVEL",
+    "attributionText": "Data provided by Marvel. © 2016 MARVEL",
+    "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2016 MARVEL</a>",
+    "etag": "f387fc0c0f62b58372795561eb445ece711bd5d6",
+    "data": {
+        "offset": 0,
+        "limit": 2,
+        "total": 22,
+        "count": 2,
+        "results": [
+                    {
+                    "id": 10253,
+                    "title": "When the Unliving Strike",
+                    "description": "",
+                    "resourceURI": "http://gateway.marvel.com/v1/public/stories/10253",
+                    "type": "story",
+                    "modified": "1969-12-31T19:00:00-0500",
+                    "thumbnail": null,
+                    "creators": {
+                    "available": 5,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/stories/10253/creators",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1295",
+                              "name": "Mike Esposito",
+                              "role": "inker"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/305",
+                              "name": "Don Heck",
+                              "role": "penciller"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/196",
+                              "name": "Jack Kirby",
+                              "role": "penciller"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/30",
+                              "name": "Stan Lee",
+                              "role": "editor"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1553",
+                              "name": "Sam Rosen",
+                              "role": "letterer"
+                              }
+                              ],
+                    "returned": 5
+                    },
+                    "characters": {
+                    "available": 1,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/stories/10253/characters",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009144",
+                              "name": "A.I.M."
+                              }
+                              ],
+                    "returned": 1
+                    },
+                    "series": {
+                    "available": 2,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/stories/10253/series",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/series/1468",
+                              "name": "Marvel Masterworks: Doctor Strange Vol. (2005)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/series/2076",
+                              "name": "Strange Tales (1951 - 1968)"
+                              }
+                              ],
+                    "returned": 2
+                    },
+                    "comics": {
+                    "available": 3,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/stories/10253/comics",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/2319",
+                              "name": "Marvel Masterworks: Doctor Strange Vol. (Hardcover)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/2820",
+                              "name": "Marvel Masterworks: Doctor Strange Vol. (Hardcover)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/11068",
+                              "name": "Strange Tales (1951) #146"
+                              }
+                              ],
+                    "returned": 3
+                    },
+                    "events": {
+                    "available": 0,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/stories/10253/events",
+                    "items": [],
+                    "returned": 0
+                    },
+                    "originalIssue": {
+                    "resourceURI": "http://gateway.marvel.com/v1/public/comics/11068",
+                    "name": "Strange Tales (1951) #146"
+                    }
+                    },
+                    {
+                    "id": 10255,
+                    "title": "Cover #10255",
+                    "description": "",
+                    "resourceURI": "http://gateway.marvel.com/v1/public/stories/10255",
+                    "type": "cover",
+                    "modified": "1969-12-31T19:00:00-0500",
+                    "thumbnail": null,
+                    "creators": {
+                    "available": 3,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/stories/10255/creators",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/263",
+                              "name": "Dick Ayers",
+                              "role": "inker"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/196",
+                              "name": "Jack Kirby",
+                              "role": "penciller (cover)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/30",
+                              "name": "Stan Lee",
+                              "role": "editor"
+                              }
+                              ],
+                    "returned": 3
+                    },
+                    "characters": {
+                    "available": 2,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/stories/10255/characters",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009144",
+                              "name": "A.I.M."
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009471",
+                              "name": "Nick Fury"
+                              }
+                              ],
+                    "returned": 2
+                    },
+                    "series": {
+                    "available": 2,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/stories/10255/series",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/series/1468",
+                              "name": "Marvel Masterworks: Doctor Strange Vol. (2005)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/series/2076",
+                              "name": "Strange Tales (1951 - 1968)"
+                              }
+                              ],
+                    "returned": 2
+                    },
+                    "comics": {
+                    "available": 3,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/stories/10255/comics",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/2319",
+                              "name": "Marvel Masterworks: Doctor Strange Vol. (Hardcover)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/2820",
+                              "name": "Marvel Masterworks: Doctor Strange Vol. (Hardcover)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/11069",
+                              "name": "Strange Tales (1951) #147"
+                              }
+                              ],
+                    "returned": 3
+                    },
+                    "events": {
+                    "available": 0,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/stories/10255/events",
+                    "items": [],
+                    "returned": 0
+                    },
+                    "originalIssue": {
+                    "resourceURI": "http://gateway.marvel.com/v1/public/comics/11069",
+                    "name": "Strange Tales (1951) #147"
+                    }
+                    }
+                    ]
+    }
+}

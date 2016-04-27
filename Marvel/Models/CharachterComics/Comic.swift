@@ -73,13 +73,13 @@ struct Comic{
 		}
 		description = dictionary["description"] as? String
 		diamondCode = dictionary["diamondCode"] as? String
-		digitalId = (dictionary["digitalId"] as? NSString)?.integerValue
+		digitalId = (dictionary["digitalId"] as? Int)
 		ean = dictionary["ean"] as? String
 		if let eventsData = dictionary["events"] as? NSDictionary{
 				events = Event(fromDictionary: eventsData)
 			}
 		format = dictionary["format"] as? String
-		id = (dictionary["id"] as? NSString)?.integerValue
+		id = (dictionary["id"] as? Int)
 		images = [Image]()
 		if let imagesArray = dictionary["images"] as? [NSDictionary]{
 			for dic in imagesArray{
@@ -89,9 +89,9 @@ struct Comic{
 		}
 		isbn = dictionary["isbn"] as? String
 		issn = dictionary["issn"] as? String
-		issueNumber = (dictionary["issueNumber"] as? NSString)?.integerValue
+		issueNumber = (dictionary["issueNumber"] as? Int)
 		modified = dictionary["modified"] as? String
-		pageCount = (dictionary["pageCount"] as? NSString)?.integerValue
+		pageCount = (dictionary["pageCount"] as? Int)
 		prices = [Price]()
 		if let pricesArray = dictionary["prices"] as? [NSDictionary]{
 			for dic in pricesArray{

@@ -25,6 +25,13 @@ class FilterCharactersTableViewController: UITableViewController {
         configureView()
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+        // Hide navigation bar while swip up, or show navigation bar while swip down.
+        navigationController?.hidesBarsOnSwipe = false
+        
+    }
     func configureView() {
 
         // tableView background
@@ -80,7 +87,7 @@ extension FilterCharactersTableViewController: UISearchBarDelegate {
     }
 }
 
-extension FilterCharactersTableViewController: ListViewInterface {
+extension FilterCharactersTableViewController: FilterViewInterface {
 
     func showCharacters(characters: [Character]) {
         self.characters = characters

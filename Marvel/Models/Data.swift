@@ -20,9 +20,9 @@ struct Data{
 	 * Instantiate the instance using the passed dictionary values to set the properties values
 	 */
 	init(fromDictionary dictionary: NSDictionary){
-		count = (dictionary["count"] as? NSString)?.integerValue
-		limit = (dictionary["limit"] as? NSString)?.integerValue
-		offset = (dictionary["offset"] as? NSString)?.integerValue
+		count = (dictionary["count"] as? Int)
+		limit = (dictionary["limit"] as? Int)
+		offset = (dictionary["offset"] as? Int)
 		results = [Character]()
 		if let resultsArray = dictionary["results"] as? [NSDictionary]{
 			for dic in resultsArray{
@@ -30,7 +30,7 @@ struct Data{
 				results.append(value)
 			}
 		}
-		total = (dictionary["total"] as? NSString)?.integerValue
+		total = (dictionary["total"] as? Int)
 	}
 
 	/**

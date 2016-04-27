@@ -129,8 +129,8 @@ enum Router: URLRequestConvertible{
             let params = ["ts": ts, "apikey": apiKey, "hash": hash]
             return params
 
-        case .FilterCharacters(_, let name, let limit, (let ts,  let apiKey, let hash)):
-            let params = ["nameStartsWith": name, "ts": ts, "apikey": apiKey, "hash": hash, "limit": limit]
+        case .FilterCharacters(_, let name, _, (let ts,  let apiKey, let hash)):
+            let params = ["nameStartsWith": name, "ts": ts, "apikey": apiKey, "hash": hash]
             return params
         }
 

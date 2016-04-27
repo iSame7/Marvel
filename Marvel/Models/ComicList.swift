@@ -19,7 +19,7 @@ struct ComicList{
 	 * Instantiate the instance using the passed dictionary values to set the properties values
 	 */
 	init(fromDictionary dictionary: NSDictionary){
-		available = (dictionary["available"] as? NSString)?.integerValue
+		available = (dictionary["available"] as? Int)
 		collectionURI = dictionary["collectionURI"] as? String
 		items = [Item]()
 		if let itemsArray = dictionary["items"] as? [NSDictionary]{
@@ -28,7 +28,7 @@ struct ComicList{
 				items.append(value)
 			}
 		}
-		returned = (dictionary["returned"] as? NSString)?.integerValue
+		returned = (dictionary["returned"] as? Int)
 	}
 
 	/**

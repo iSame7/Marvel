@@ -17,7 +17,7 @@ struct Price{
 	 * Instantiate the instance using the passed dictionary values to set the properties values
 	 */
 	init(fromDictionary dictionary: NSDictionary){
-		price = (dictionary["price"] as? NSString)?.integerValue
+		price = (dictionary["price"] as? Int)
 		type = dictionary["type"] as? String
 	}
 

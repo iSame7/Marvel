@@ -1,0 +1,587 @@
+{
+    "code": 200,
+    "status": "Ok",
+    "copyright": "© 2016 MARVEL",
+    "attributionText": "Data provided by Marvel. © 2016 MARVEL",
+    "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2016 MARVEL</a>",
+    "etag": "651bae6205b2e8fc3699773a7cad2add0842954f",
+    "data": {
+        "offset": 0,
+        "limit": 2,
+        "total": 22,
+        "count": 2,
+        "results": [
+                    {
+                    "id": 13082,
+                    "title": "Ant-Man & the Wasp (2010 - 2011)",
+                    "description": null,
+                    "resourceURI": "http://gateway.marvel.com/v1/public/series/13082",
+                    "urls": [
+                             {
+                             "type": "detail",
+                             "url": "http://marvel.com/comics/series/13082/ant-man_the_wasp_2010_-_2011?utm_campaign=apiRef&utm_source=737b82b39ad17bd9d9dd8ad43a1dca7c"
+                             }
+                             ],
+                    "startYear": 2010,
+                    "endYear": 2011,
+                    "rating": "",
+                    "type": "",
+                    "modified": "2011-05-25T10:54:26-0400",
+                    "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/60/4c606835416be",
+                    "extension": "jpg"
+                    },
+                    "creators": {
+                    "available": 3,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/13082/creators",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9394",
+                              "name": "Salvador Espin",
+                              "role": "penciller"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9550",
+                              "name": "Tim Seeley",
+                              "role": "writer"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+                              "name": "Jordan White",
+                              "role": "editor"
+                              }
+                              ],
+                    "returned": 3
+                    },
+                    "characters": {
+                    "available": 3,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/13082/characters",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009144",
+                              "name": "A.I.M."
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010802",
+                              "name": "Ant-Man (Eric O'Grady)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011490",
+                              "name": "Hank Pym"
+                              }
+                              ],
+                    "returned": 3
+                    },
+                    "stories": {
+                    "available": 6,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/13082/stories",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/81526",
+                              "name": "Ant-Man & the Wasp (2010) #3 cover",
+                              "type": "cover"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/81527",
+                              "name": "Ant-Man & the Wasp (2010) #3 interior",
+                              "type": "interiorStory"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/81528",
+                              "name": "Cover #81528",
+                              "type": "cover"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/81529",
+                              "name": "Interior #81529",
+                              "type": "interiorStory"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/81530",
+                              "name": "Cover #81530",
+                              "type": "cover"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/81531",
+                              "name": "Interior #81531",
+                              "type": "interiorStory"
+                              }
+                              ],
+                    "returned": 6
+                    },
+                    "comics": {
+                    "available": 3,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/13082/comics",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/36765",
+                              "name": "Ant-Man & the Wasp (2010) #1"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/36764",
+                              "name": "Ant-Man & the Wasp (2010) #2"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/36763",
+                              "name": "Ant-Man & the Wasp (2010) #3"
+                              }
+                              ],
+                    "returned": 3
+                    },
+                    "events": {
+                    "available": 0,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/13082/events",
+                    "items": [],
+                    "returned": 0
+                    },
+                    "next": null,
+                    "previous": null
+                    },
+                    {
+                    "id": 1991,
+                    "title": "Avengers (1963 - 1996)",
+                    "description": "Avengers Assemble! Iron Man, Thor, Captain America and the rest of Earth's Mightiest Heroes unite to stand against the threats none can face alone! See the Avengers go up against Ultron, Kang, the Masters of Evil and more over three decades of epic action!",
+                    "resourceURI": "http://gateway.marvel.com/v1/public/series/1991",
+                    "urls": [
+                             {
+                             "type": "detail",
+                             "url": "http://marvel.com/comics/series/1991/avengers_1963_-_1996?utm_campaign=apiRef&utm_source=737b82b39ad17bd9d9dd8ad43a1dca7c"
+                             }
+                             ],
+                    "startYear": 1963,
+                    "endYear": 1996,
+                    "rating": "",
+                    "type": "ongoing",
+                    "modified": "2013-05-21T13:10:43-0400",
+                    "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/10/519baa6d1890a",
+                    "extension": "jpg"
+                    },
+                    "creators": {
+                    "available": 286,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/1991/creators",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2289",
+                              "name": "Alexandrov",
+                              "role": "inker"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2293",
+                              "name": "Fredericks",
+                              "role": "inker"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2253",
+                              "name": "Garvey",
+                              "role": "inker"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1186",
+                              "name": "Jack Abel",
+                              "role": "inker"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1212",
+                              "name": "Dan Adkins",
+                              "role": "inker"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1836",
+                              "name": "Terry Austin",
+                              "role": "inker"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/263",
+                              "name": "Dick Ayers",
+                              "role": "inker"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2299",
+                              "name": "Babcock",
+                              "role": "letterer"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2258",
+                              "name": "Lopez",
+                              "role": "letterer"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2328",
+                              "name": "N.j.q.",
+                              "role": "letterer"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1865",
+                              "name": "Diana Albers",
+                              "role": "letterer"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2314",
+                              "name": "Bollers",
+                              "role": "colorist"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2284",
+                              "name": "Kossoff",
+                              "role": "colorist"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2330",
+                              "name": "Malibu",
+                              "role": "colorist"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2315",
+                              "name": "Marshall",
+                              "role": "colorist"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2331",
+                              "name": "Ramos",
+                              "role": "penciller (cover)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/314",
+                              "name": "Neal Adams",
+                              "role": "penciller (cover)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2148",
+                              "name": "Title",
+                              "role": "writer"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2278",
+                              "name": "Paul Abrams",
+                              "role": "penciller"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2234",
+                              "name": "Embellishers Assembled",
+                              "role": "penciller"
+                              }
+                              ],
+                    "returned": 20
+                    },
+                    "characters": {
+                    "available": 96,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/1991/characters",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009144",
+                              "name": "A.I.M."
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010801",
+                              "name": "Ant-Man (Scott Lang)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010784",
+                              "name": "Ares"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009165",
+                              "name": "Avengers"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009170",
+                              "name": "Baron Zemo (Heinrich Zemo)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009175",
+                              "name": "Beast"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009184",
+                              "name": "Black Bolt"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009186",
+                              "name": "Black Knight (Sir Percy of Scandia)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009187",
+                              "name": "Black Panther"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009189",
+                              "name": "Black Widow"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009220",
+                              "name": "Captain America"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010338",
+                              "name": "Captain Marvel (Carol Danvers)"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009243",
+                              "name": "Colossus"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009255",
+                              "name": "Crystal"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+                              "name": "Cyclops"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009262",
+                              "name": "Daredevil"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009267",
+                              "name": "Dazzler"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009270",
+                              "name": "Deathbird"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009281",
+                              "name": "Doctor Doom"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010689",
+                              "name": "Doctor Spectrum"
+                              }
+                              ],
+                    "returned": 20
+                    },
+                    "stories": {
+                    "available": 837,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/1991/stories",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14435",
+                              "name": "Cover #14435",
+                              "type": "cover"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14436",
+                              "name": "The Coming of the Avengers!",
+                              "type": "interiorStory"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14441",
+                              "name": "Avengers (1963) #10 cover",
+                              "type": "cover"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14442",
+                              "name": "The Avengers Break Up!",
+                              "type": "interiorStory"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14443",
+                              "name": "",
+                              "type": "letters"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14444",
+                              "name": "The One and Only \"Cap\"",
+                              "type": "pinup"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14445",
+                              "name": "Cover #14445",
+                              "type": "cover"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14446",
+                              "name": "Whatever Gods There Be",
+                              "type": "interiorStory"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14447",
+                              "name": "Cover #14447",
+                              "type": "cover"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14448",
+                              "name": "Five Dooms to Save Tomorrow",
+                              "type": "interiorStory"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14449",
+                              "name": "Cover #14449",
+                              "type": "cover"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14450",
+                              "name": "What To Do Until The Sentinels Come",
+                              "type": "interiorStory"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14451",
+                              "name": "Cover #14451",
+                              "type": "cover"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14452",
+                              "name": "The Sentinels are Alive and Well!",
+                              "type": "interiorStory"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14453",
+                              "name": "Cover #14453",
+                              "type": "cover"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14454",
+                              "name": "With A Bang And A Whimper",
+                              "type": "interiorStory"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14455",
+                              "name": "Cover #14455",
+                              "type": "cover"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14456",
+                              "name": "In The Beginning Was The World Within",
+                              "type": "interiorStory"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14457",
+                              "name": "Cover #14457",
+                              "type": "cover"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/stories/14458",
+                              "name": "A Traitor Stalks Among Us!",
+                              "type": "interiorStory"
+                              }
+                              ],
+                    "returned": 20
+                    },
+                    "comics": {
+                    "available": 403,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/1991/comics",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/6951",
+                              "name": "Avengers (1963) #1"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/22620",
+                              "name": "Avengers (1963) #1.5"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7063",
+                              "name": "Avengers (1963) #2"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7174",
+                              "name": "Avengers (1963) #3"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7285",
+                              "name": "Avengers (1963) #4"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7299",
+                              "name": "Avengers (1963) #5"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7310",
+                              "name": "Avengers (1963) #6"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7321",
+                              "name": "Avengers (1963) #7"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7332",
+                              "name": "Avengers (1963) #8"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7343",
+                              "name": "Avengers (1963) #9"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/6953",
+                              "name": "Avengers (1963) #10"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/6964",
+                              "name": "Avengers (1963) #11"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/6975",
+                              "name": "Avengers (1963) #12"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/6986",
+                              "name": "Avengers (1963) #13"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/6997",
+                              "name": "Avengers (1963) #14"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7008",
+                              "name": "Avengers (1963) #15"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7019",
+                              "name": "Avengers (1963) #16"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7030",
+                              "name": "Avengers (1963) #17"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7041",
+                              "name": "Avengers (1963) #18"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7052",
+                              "name": "Avengers (1963) #19"
+                              }
+                              ],
+                    "returned": 20
+                    },
+                    "events": {
+                    "available": 6,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/1991/events",
+                    "items": [
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/events/116",
+                              "name": "Acts of Vengeance!"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/events/239",
+                              "name": "Crossing"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/events/252",
+                              "name": "Inferno"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/events/154",
+                              "name": "Onslaught"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/events/270",
+                              "name": "Secret Wars"
+                              },
+                              {
+                              "resourceURI": "http://gateway.marvel.com/v1/public/events/271",
+                              "name": "Secret Wars II"
+                              }
+                              ],
+                    "returned": 6
+                    },
+                    "next": {
+                    "resourceURI": "http://gateway.marvel.com/v1/public/series/3621",
+                    "name": "Avengers (1996 - 1997)"
+                    },
+                    "previous": null
+                    }
+                    ]
+    }
+}

@@ -30,7 +30,9 @@ class DetailsPresenter: NSObject, DetailsInteractorOutput, DetailsModuleInterfac
     }
 
     func foundCharactersSeries(series: [Series]) {
-        userInterface?.showCharacterSeries(series)
+        if series.count > 0 {
+            userInterface?.showCharacterSeries(series)
+        }
     }
 
     func updateViewWithCharacterStories(limit limit: Int, characterId: String) {
@@ -38,7 +40,9 @@ class DetailsPresenter: NSObject, DetailsInteractorOutput, DetailsModuleInterfac
     }
 
     func foundCharactersStories(stories: [Stories]) {
-        userInterface?.showCharacterStories(stories)
+        if stories.count > 0 {
+            userInterface?.showCharacterStories(stories)
+        }
     }
 
     func updateViewWithCharacterEvents(limit limit: Int, characterId: String) {
@@ -46,7 +50,9 @@ class DetailsPresenter: NSObject, DetailsInteractorOutput, DetailsModuleInterfac
     }
 
     func foundCharactersEvents(events: [Events]) {
-        userInterface?.showCharacterEvents(events)
+        if events.count > 0 {
+            userInterface?.showCharacterEvents(events)
+        }
     }
 
     func openImageViewer(galleryViewController: GalleryViewController) {

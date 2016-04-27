@@ -11,6 +11,7 @@ import XCTest
 
 class MarvelAuthenticationTests: XCTestCase {
 
+    // SUT: stands for - System Under Test.
     var sut:MarvelFactory?
 
     override func setUp() {
@@ -23,6 +24,8 @@ class MarvelAuthenticationTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+
+        sut = nil
     }
 
     func testTimestamp_ShouldNotChangeOnTheSameInstance() {
@@ -54,16 +57,7 @@ class MarvelAuthenticationTests: XCTestCase {
         let md5 = sut?.calculateMD5("abc")
         XCTAssertEqual(md5, "900150983cd24fb0d6963f7d28e17f72")
     }
-/*
-    func testURLParameters_ShouldHaveTimestampPublicKeyAndHashedConcatenation() {
-        // let's use Dependency injection technique.
-        sut?.timeStamp = "Timestamp"
-        sut?.publicKey = "Public"
-        sut?.privateKey = "Private"
-        sut?.timestampedKeys()
-        sut?.hash = 
-    }
-*/
+
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
