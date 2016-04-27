@@ -53,6 +53,9 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
+        // Just set navigationBarHidden = flase to show navigation bar in case of user swip up in first screen. 
+        self.navigationController?.navigationBarHidden = false
+
         // Hide navigation bar while swip up, or show navigation bar while swip down.
         navigationController?.hidesBarsOnSwipe = false
     }
