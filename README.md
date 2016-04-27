@@ -13,3 +13,11 @@ iOS Marvel client app enable users to browse Marvel characters. Developed using 
 
 <img src="screenshot-1.png" alt="Screenshot" width="320px"/>
 <img src="screenshot-2.png" alt="Screenshot" width="320px" />
+
+## Usage
+
+Just clone the repo, Open the project in Xcode then test it on your iOS device or iOS simulator.
+
+In case you want to change the project setup like Marvel API:
+1. Get your own keys from http://developer.marvel.com
+2. Inside Marvel/Marvel/AppConstants, change KMarvelFactory_PublicKey and KMarvelFactory_PrivateKey with your owen keys.
