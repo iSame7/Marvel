@@ -20,7 +20,8 @@ Using this application, users will be able to browse through the Marvel library 
 
 **App use cases**
 
-* List of Characters
+* List of Characters:
+
 In this view, you should present a list of characters loaded from the Marvel API character index. Notice that the when reaching the end of the list, if there are additional results to show, you should load and present the next page.
 
 
