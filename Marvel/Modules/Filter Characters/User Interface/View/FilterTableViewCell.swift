@@ -23,7 +23,6 @@ class FilterTableViewCell: UITableViewCell {
 
                 // Setting a remote image
                 if let path = marvelcharacter.thumbnail {
-//                    self.characterImageView.contentMode = UIViewContentMode.ScaleAspectFill
                     self.characterImageView.hnk_setImageFromURL(NSURL(string: path.path! + "." + path.thumbExtension!)!)
                 }
 
