@@ -11,8 +11,8 @@ import Haneke
 import ImageViewer
 
 //Default Blur Settings.
-let blurRadious:CGFloat = 14.0
-let blurTintColor:UIColor = UIColor(white: 0, alpha: 0.9)
+let blurRadious:CGFloat = 25.0
+let blurTintColor:UIColor = UIColor(white: 0, alpha: 0.75)
 let blurDeltaFactor:CGFloat = 1.4
 
 class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, TableViewCellDelegate{
@@ -107,6 +107,7 @@ class MarvelHeroesDetailsTableViewController: ParallaxTableViewController, Table
             // Do something with image
             var reponseImage = image
             reponseImage = reponseImage.applyBlurWithRadius(blurRadious, tintColor: blurTintColor, saturationDeltaFactor: blurDeltaFactor, maskImage: nil)!
+            imageView.contentMode = UIViewContentMode.ScaleAspectFill
             imageView.image = reponseImage
             self.tableView.backgroundView = imageView
             self.view.insertSubview(imageView, atIndex: 0)

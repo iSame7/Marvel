@@ -58,7 +58,7 @@ class MarvelFactory: MarvelGateway {
     func generateTimeStamp() -> String? {
         if self.timeStamp == nil {
             self.timeStamp = String (NSDate.timeIntervalSinceReferenceDate())
-            print("timeStamp \(self.timeStamp)")
+            //print("timeStamp \(self.timeStamp)")
         }
         return self.timeStamp
     }
