@@ -190,5 +190,11 @@ To make our API service layer more ignorant about most of the app, it has to imp
 Thanks to Dependency Inversion, the rest of the app can now be ignorant. It knows about the contract, but not about any class that satisfies that contract.
 Anything that implements the protocol can be plugged in. The Marvel Gateway serves as a Boundary.
 
+You can read more about DIP [HERE](http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872)
+# VIPER Architecture design pattern:
+
+**What is VIPER** :
+**Why VIPER**:
+
 
 
