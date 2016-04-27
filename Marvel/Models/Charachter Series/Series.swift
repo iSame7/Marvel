@@ -72,7 +72,7 @@ struct Series{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if characters != nil{
 			dictionary["characters"] = characters.toDictionary()
 		}

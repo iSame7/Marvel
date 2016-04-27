@@ -38,7 +38,7 @@ struct ComicData{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if count != nil{
 			dictionary["count"] = count
 		}

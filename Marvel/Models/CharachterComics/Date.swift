@@ -26,7 +26,7 @@ struct Date{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if date != nil{
 			dictionary["date"] = date
 		}

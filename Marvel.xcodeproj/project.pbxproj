@@ -105,10 +105,6 @@
 		29E68A081CC43429007211D8 /* SlidingMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E68A051CC43429007211D8 /* SlidingMenuCell.swift */; };
 		29E68A091CC43429007211D8 /* SlidingMenuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E68A061CC43429007211D8 /* SlidingMenuLayout.swift */; };
 		29E68A0D1CC43434007211D8 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E68A0C1CC43434007211D8 /* AppConstants.swift */; };
-		29E68A131CC434CA007211D8 /* Inspirations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29E68A111CC434CA007211D8 /* Inspirations.plist */; };
-		29E68A141CC434CA007211D8 /* Inspirations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E68A121CC434CA007211D8 /* Inspirations.xcassets */; };
-		29F04D591CC18C300082AB14 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F04D581CC18C300082AB14 /* MasterViewController.swift */; };
-		29F04D5B1CC18C300082AB14 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F04D5A1CC18C300082AB14 /* DetailViewController.swift */; };
 		29F04D5E1CC18C300082AB14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F04D5C1CC18C300082AB14 /* Main.storyboard */; };
 		29F04D601CC18C300082AB14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F04D5F1CC18C300082AB14 /* Assets.xcassets */; };
 		29F04D631CC18C300082AB14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F04D611CC18C300082AB14 /* LaunchScreen.storyboard */; };
@@ -234,11 +230,7 @@
 		29E68A051CC43429007211D8 /* SlidingMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingMenuCell.swift; sourceTree = "<group>"; };
 		29E68A061CC43429007211D8 /* SlidingMenuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingMenuLayout.swift; sourceTree = "<group>"; };
 		29E68A0C1CC43434007211D8 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
-		29E68A111CC434CA007211D8 /* Inspirations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Inspirations.plist; sourceTree = "<group>"; };
-		29E68A121CC434CA007211D8 /* Inspirations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Inspirations.xcassets; sourceTree = "<group>"; };
 		29F04D531CC18C2F0082AB14 /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		29F04D581CC18C300082AB14 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		29F04D5A1CC18C300082AB14 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		29F04D5D1CC18C300082AB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29F04D5F1CC18C300082AB14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Marvel/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		29F04D621CC18C300082AB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -708,8 +700,6 @@
 			isa = PBXGroup;
 			children = (
 				29F04D5F1CC18C300082AB14 /* Assets.xcassets */,
-				29E68A121CC434CA007211D8 /* Inspirations.xcassets */,
-				29E68A111CC434CA007211D8 /* Inspirations.plist */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -759,8 +749,6 @@
 				29E68A0A1CC43434007211D8 /* Utility */,
 				29E68A0E1CC4344C007211D8 /* Marvel Base */,
 				29E68A001CC43429007211D8 /* Modules */,
-				29F04D581CC18C300082AB14 /* MasterViewController.swift */,
-				29F04D5A1CC18C300082AB14 /* DetailViewController.swift */,
 				29F04D641CC18C300082AB14 /* Info.plist */,
 			);
 			path = Marvel;
@@ -921,8 +909,6 @@
 				29F04D631CC18C300082AB14 /* LaunchScreen.storyboard in Resources */,
 				29F04D601CC18C300082AB14 /* Assets.xcassets in Resources */,
 				29F04D5E1CC18C300082AB14 /* Main.storyboard in Resources */,
-				29E68A141CC434CA007211D8 /* Inspirations.xcassets in Resources */,
-				29E68A131CC434CA007211D8 /* Inspirations.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1042,7 +1028,6 @@
 				294CA3A41CCF036900518FEB /* DetailsInteractorIO.swift in Sources */,
 				29BF4F7C1CCAD85400C0194F /* Previou.swift in Sources */,
 				29E689FF1CC4341D007211D8 /* Session.swift in Sources */,
-				29F04D5B1CC18C300082AB14 /* DetailViewController.swift in Sources */,
 				298923511CC5177400BCB5EE /* Data.swift in Sources */,
 				29BF4F281CC9463D00C0194F /* Catalog.swift in Sources */,
 				298923541CC5177400BCB5EE /* Character.swift in Sources */,
@@ -1050,7 +1035,6 @@
 				29BF4F201CC8D6DE00C0194F /* SeriesSummary.swift in Sources */,
 				294CA36E1CCE3AB200518FEB /* ListViewInterface.swift in Sources */,
 				2989232B1CC510D100BCB5EE /* MarvelFactory+Characters.swift in Sources */,
-				29F04D591CC18C300082AB14 /* MasterViewController.swift in Sources */,
 				296F5AC61CC6FF55000BA496 /* ListInteractorIO.swift in Sources */,
 				298923291CC50F4D00BCB5EE /* MarvelFactory.swift in Sources */,
 				29BF4F161CC8D6DE00C0194F /* CharacterList.swift in Sources */,

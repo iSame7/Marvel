@@ -32,7 +32,7 @@ class SeriesRootClass: BaseRootClass{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if attributionHTML != nil{
 			dictionary["attributionHTML"] = attributionHTML
 		}

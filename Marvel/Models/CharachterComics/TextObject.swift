@@ -28,7 +28,7 @@ struct TextObject{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if language != nil{
 			dictionary["language"] = language
 		}

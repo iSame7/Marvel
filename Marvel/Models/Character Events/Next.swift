@@ -26,7 +26,7 @@ struct Next{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if name != nil{
 			dictionary["name"] = name
 		}

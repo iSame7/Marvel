@@ -36,7 +36,7 @@ struct Creator{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if available != nil{
 			dictionary["available"] = available
 		}
