@@ -12,4 +12,4 @@ Marvel
 iOS Marvel client app enable users to browse Marvel characters. Developed using VIPER and TDD.
 
 <img src="screenshot-1.png" alt="Screenshot" width="320px"/>
-<img src="screenshot-1.png" alt="Screenshot" width="320px" />
+<img src="screenshot-2.png" alt="Screenshot" width="320px" />
