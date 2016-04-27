@@ -171,3 +171,18 @@ In case you want to change the project setup like Marvel API keys:
 
 **MarvelTests** : Contains all unit testing files like testing VIPER modules and MarvelAuthenticationTests.
 
+
+# Design Patterns used:
+
+**Dependency inversion principle** 
+In object-oriented programming, the dependency inversion principle refers to a specific form of decoupling software modules. 
+As Objects are like horses. The less they know about their chaotic surroundings, the easier it is to control them.
+We don’t want our objects to be spooked when there’s a lot going on. So let’s build ignorance into our systems.
+
+I used this techniqe in the network layer:
+To make our API service layer more ignorant about most of the app, it has to implement the marvel gateway protocol. The prtocol act as a contract.
+Thanks to Dependency Inversion, the rest of the app can now be ignorant. It knows about the contract, but not about any class that satisfies that contract.
+Anything that implements the protocol can be plugged in. The Marvel Gateway serves as a Boundary.
+
+
+
