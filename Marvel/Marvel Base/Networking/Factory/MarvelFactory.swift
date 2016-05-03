@@ -22,6 +22,11 @@ class MarvelFactory: MarvelGateway {
 
     let KMarvelFactory_CharactersEventsEndpoint                             = "/events"
 
+    /* Marvel API keys */
+    let KMarvelFactory_PublicKey:String                                     = "737b82b39ad17bd9d9dd8ad43a1dca7c"
+
+    let KMarvelFactory_PrivateKey:String                                    = "a198e65e4b5bd6a95d68e9949fc24a880022eef9"
+
     var timeStamp:String?
 
     var hash:String?
